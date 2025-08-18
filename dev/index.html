@@ -6,15 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>index</title>
     <meta name="description" content="This is an index page." />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
   <body>
-    <div class="body">
+    <div class="wrapper">
       <header class="header">
         <div class="container">
           <div class="header__content">
-            <a class="link-reset header__logo_link" href="/"
+            <a class="header__logo_link" href="/"
               ><img
                 class="header__logo_img"
                 alt="logo"
@@ -24,14 +28,10 @@
             <nav class="header__nav">
               <ul class="header__nav_list">
                 <li>
-                  <a class="link-reset header__nav_link" href="/pages/post.html"
-                    >post</a
-                  >
+                  <a class="header__nav_link" href="/pages/post.html">post</a>
                 </li>
                 <li>
-                  <a
-                    class="link-reset header__nav_link"
-                    href="/pages/video-post.html"
+                  <a class="header__nav_link" href="/pages/video-post.html"
                     >video post</a
                   >
                 </li>
@@ -41,77 +41,49 @@
                   >
                 </li>
                 <li>
-                  <a
-                    class="link-reset header__nav_link"
-                    href="/pages/stats.html"
-                    >stats</a
-                  >
+                  <a class="header__nav_link" href="/pages/stats.html">stats</a>
                 </li>
                 <li>
-                  <a
-                    class="link-reset header__nav_link"
-                    href="/pages/review.html"
+                  <a class="header__nav_link" href="/pages/review.html"
                     >review</a
                   >
                 </li>
                 <li>
-                  <a
-                    class="link-reset header__nav_link"
-                    href="/pages/schedule.html"
+                  <a class="header__nav_link" href="/pages/schedule.html"
                     >calendar</a
                   >
                 </li>
                 <li>
-                  <a
-                    class="link-reset header__nav_link"
-                    href="/pages/results.html"
+                  <a class="header__nav_link" href="/pages/results.html"
                     >results</a
                   >
                 </li>
 
-                  <li>
-                  <a
-                    class="link-reset header__nav_link"
-                    href="/pages/history.html"
+                <li>
+                  <a class="header__nav_link" href="/pages/history.html"
                     >history</a
                   >
                 </li>
 
                 <li>
-                  <a
-                    class="link-reset header__nav_link"
-                    href="/pages/video.html"
-                    >video</a
-                  >
+                  <a class="header__nav_link" href="/pages/video.html">video</a>
                 </li>
                 <li>
-                  <a class="link-reset header__nav_link" href="/pages/live.html"
-                    >live</a
-                  >
+                  <a class="header__nav_link" href="/pages/live.html">live</a>
                 </li>
                 <li>
-                  <a class="link-reset header__nav_link" href="/pages/club.html"
-                    >club</a
-                  >
+                  <a class="header__nav_link" href="/pages/club.html">club</a>
                 </li>
                 <li>
-                  <a
-                    class="link-reset header__nav_link"
-                    href="/pages/clubs.html"
-                    >clubs</a
-                  >
+                  <a class="header__nav_link" href="/pages/clubs.html">clubs</a>
                 </li>
                 <li>
-                  <a
-                    class="link-reset header__nav_link"
-                    href="/pages/player.html"
+                  <a class="header__nav_link" href="/pages/player.html"
                     >player</a
                   >
                 </li>
                 <li>
-                  <a
-                    class="link-reset header__nav_link"
-                    href="/pages/contact.html"
+                  <a class="header__nav_link" href="/pages/contact.html"
                     >contact</a
                   >
                 </li>
@@ -123,8 +95,8 @@
           </div>
         </div>
       </header>
-      <div class="main">
-        <div class="matches__section mb-50">
+      <main class="main">
+        <!-- <div class="matches__section mb-50">
           <div class="container">
             <div class="matches__rows grid-cols-4">
               <div class="match__item">
@@ -237,8 +209,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="league-info__section mb-50">
+        </div> -->
+        <!-- <div class="league-info__section mb-50">
           <div class="container">
             <div class="title-block">
               <h2 class="mb-reset title">latest news</h2>
@@ -384,8 +356,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="lives__section mb-50">
+        </div> -->
+        <!-- <div class="lives__section mb-50">
           <div class="container">
             <div class="title-block">
               <h2 class="mb-reset title">live broadcasts</h2>
@@ -553,8 +525,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="video__section mb-50">
+        </div> -->
+        <!-- <div class="video__section mb-50">
           <div class="container">
             <div class="title-block">
               <h2 class="mb-reset title">latest video</h2>
@@ -631,8 +603,8 @@
               </a>
             </div>
           </div>
-        </div>
-        <div class="full__section mb-50">
+        </div> -->
+        <!-- <div class="full__section mb-50">
           <div class="container">
             <div class="full__rows">
               <div class="full__info_block">
@@ -663,8 +635,8 @@
             </div>
           </div>
           <div class="overlay ibg"></div>
-        </div>
-        <div class="players__section mb-50">
+        </div> -->
+        <!-- <div class="players__section mb-50">
           <div class="container">
             <div class="title-block">
               <h2 class="title mb-reset">popular players</h2>
@@ -756,8 +728,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="teams__section mb-50">
+        </div> -->
+        <!-- <div class="teams__section mb-50">
           <div class="container">
             <div class="title-block">
               <h2 class="mb-reset title">popular clubs</h2>
@@ -1059,8 +1031,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="news__section mb-50">
+        </div> -->
+        <!-- <div class="news__section mb-50">
           <div class="container">
             <div class="title-block">
               <h2 class="mb-reset title">top news</h2>
@@ -1161,9 +1133,9 @@
               </a>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="footer">
+        </div> -->
+      </main>
+      <!-- <footer class="footer">
         <div class="container">
           <div class="footer__content flx-btwn">
             <a href="#" class="link-reset footer__logo_block"
@@ -1231,7 +1203,10 @@
             <p class="mb-reset">© 2025 – liga1.pt. All Rights Reserved</p>
           </div>
         </div>
-      </div>
+      </footer> -->
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/js/menuBurger.js"></script>
+    <script type="module" src="/js/swiper.js"></script>
   </body>
 </html>
