@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>calendar</title>
+    <meta name="description" content="This is a calendar." />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__content">
+            <a class="link-reset header__logo_link" href="/"
+              ><img
+                class="header__logo_img"
+                alt="Logo"
+                src="/images/5ee74aa594530d039f67b2923e3d7f7e.png"
+              />
+            </a>
+            <nav class="header__nav">
+              <ul class="header__nav_list">
+                <li>
+                  <a class="link-reset header__nav_link" href="/pages/post.html"
+                    >post</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="/pages/video-post.html"
+                    >video post</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="/pages/news.html"
+                    >news</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="/pages/stats.html"
+                    >stats</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="/pages/review.html"
+                    >review</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="/pages/calendar.html"
+                    >calendar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="/pages/results.html"
+                    >results</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="/pages/video.html"
+                    >video</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="/pages/lives.html"
+                    >lives</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="/pages/team.html"
+                    >team</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="/pages/teams.html"
+                    >teams</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="/pages/player.html"
+                    >player</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-reset header__nav_link"
+                    href="/pages/contact.html"
+                    >contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <button class="header__burger">
+              <span class="header__burger-line"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="calendar__section section top-section">
+          <div class="container">
+            <div class="title__block">
+              <img
+                class="title__icon"
+                src="/images/491d6c963800b8703a28556d01de5771.png"
+              />
+              <p class="subtitle">events</p>
+              <h2 class="title">calendar</h2>
+            </div>
+            <div id="calendar"></div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__content">
+            <a class="footer__logo_block link-reset" href="#"
+              ><img
+                class="footer__logo"
+                src="/images/5ee74aa594530d039f67b2923e3d7f7e.png"
+            /></a>
+            <div class="footer__menu">
+              <div class="footer__item flx-clmn">
+                <a href="#" class="hover-text link-reset footer__link">news</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >about us</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >sitemap</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >careers</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >features</a
+                >
+              </div>
+              <div class="footer__item flx-clmn">
+                <a href="#" class="hover-text link-reset footer__link"
+                  >Upcoming Events</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >Live Scores</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >Player Profiles</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >Teams and Leagues</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >Fantasy Sports</a
+                >
+              </div>
+              <div class="footer__item flx-clmn">
+                <a href="#" class="hover-text link-reset footer__link"
+                  >Contact Support</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >Help Center</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >Account Support</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >Membership Support</a
+                ><a href="#" class="hover-text link-reset footer__link"
+                  >Order Status</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="footer__btm">
+            <p class="reset">Copyright football365. All Rights Reserved 2025</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.18/index.global.min.js"></script>
+    <script type="module" src="/js/menuBurger.js"></script>
+    <script type="module" src="/js/calendar.js"></script>
+  </body>
+</html>
