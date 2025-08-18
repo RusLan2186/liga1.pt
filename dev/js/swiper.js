@@ -19,17 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  initSwiper('.hero__swiper', {
-    effect: 'fade',
-    slidesPerView: 1,
-    speed: 800,
-    grabCursor: true,
-    loop: true,
-    spaceBetween: 0,
-    autoHeight: false,
-    autoplay: { delay: 2000 },
-    fadeEffect: { crossFade: true },
-  });
 
   // clubs__swiper — может быть несколько
   initSwiper('.clubs__swiper', {
@@ -61,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
- // custom__swiper — может быть несколько
+  // custom__swiper — может быть несколько
   initSwiper('.custom__swiper', {
     slidesPerView: 4,
     speed: 800,
@@ -69,6 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
     loop: true,
     spaceBetween: 1,
     autoHeight: false,
+    
+   
     breakpoints: {
       320: { slidesPerView: 1, spaceBetween: 15 },
       600: { slidesPerView: 2, spaceBetween: 15 },

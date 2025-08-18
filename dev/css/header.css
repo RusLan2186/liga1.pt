@@ -3,7 +3,7 @@
   align-items: center;
   height: 60px;
   background: #262624;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;

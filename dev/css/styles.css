@@ -1,5 +1,7 @@
 @import 'normalize.css';
 @import 'header.css';
+@import 'results.css';
+@import 'swiper.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
 
@@ -24,7 +26,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color:  rgb(8, 95, 255) ;
+  background-color: rgb(8, 95, 255);
   border-radius: 2px;
 }
 
@@ -38,6 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  padding-top: 100px;
 }
 
 .container {
@@ -49,7 +52,6 @@ body {
   padding-right: 15px;
 }
 
-
 .main {
   display: flex;
   flex-direction: column;
@@ -60,6 +62,9 @@ body {
   padding-top: 50px;
 }
 
+.section {
+  margin-bottom: 50px;
+}
 
 .flx-btwn {
   align-items: center;
@@ -73,39 +78,13 @@ body {
   cursor: pointer;
 }
 
-
-
 .mb-reset {
   margin-bottom: 0;
 }
 .mb-50 {
   margin-bottom: 50px;
 }
-.matches__rows {
-}
-.match__item {
-  background: #262624;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;
-  width: 100%;
-}
-.match__head {
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-}
-.match__body {
-  margin-bottom: 15px;
-}
-.match__team_block {
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  flex-basis: 33%;
-  row-gap: 5px;
-}
+
 .flx-col {
   align-items: center;
   display: flex;
@@ -133,6 +112,7 @@ body {
 .link__btn {
   display: block;
   background: #085fff;
+  color: rgb(255, 255, 255);
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
@@ -826,8 +806,12 @@ body {
   grid-template-columns: 15% 30% repeat(8, 1fr);
 }
 
-@media (max-width: 767.98px){
-    body.lock {
+@media (max-width: 767.98px) {
+  body.lock {
     overflow: hidden;
+  }
+
+  .section {
+    margin-bottom: 30px;
   }
 }
