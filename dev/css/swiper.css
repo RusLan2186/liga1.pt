@@ -4,28 +4,28 @@
   height: 100%;
 }
 
-.custom__swiper,
-.clubs__swiper,
-.cups__swiper {
-  padding-top: 60px;
-}
-
 .cups__swiper {
   display: none;
+}
+
+.news__swiper {
+  min-width: 0;
+  width: 100%;
 }
 
 .swiper__body {
   margin-bottom: 30px;
 }
 
-.swiper.hero__swiper .swiper-slide {
-  height: auto;
-  min-height: 0;
-}
 .swiper-slide.custom__swiper_slide {
   display: flex;
   flex-direction: column;
   height: auto;
+}
+
+.news__swiper_slide {
+  height: auto;
+  min-height: 0;
 }
 
 .swiper__buttons {
@@ -36,10 +36,13 @@
   column-gap: 30px;
   width: 100%;
   position: absolute;
-  /* top: 25px; */
-  top: 50%;
+  top: 40%;
   left: 0;
   right: 0;
+}
+
+.swiper-news__buttons{
+  top: 50%;
 }
 
 .swiper-button-next.custom__buttom_next,

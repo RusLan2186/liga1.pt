@@ -1,6 +1,9 @@
 @import 'normalize.css';
 @import 'header.css';
 @import 'results.css';
+@import 'media.css';
+@import 'news.css';
+@import 'tables.css';
 @import 'swiper.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
@@ -124,19 +127,12 @@ body {
   background-color: rgb(3, 49, 134);
   transition: 0.3s all ease;
 }
-.league-info__rows {
-  column-gap: 30px;
-}
+
 .grid-cols-69pcr-1fr {
   display: grid;
   grid-template-columns: 69% 1fr;
 }
-.media__item {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
+
 .pb-60pcr {
   padding-bottom: 60%;
 }
@@ -145,9 +141,7 @@ body {
   width: 100%;
   position: relative;
 }
-.media__img {
-  object-position: 100% 10%;
-}
+
 .ibg {
   height: 100%;
   width: 100%;
@@ -156,19 +150,8 @@ body {
   left: 0;
   top: 0;
 }
-.media__footer {
-  z-index: 10;
-  position: absolute;
-  bottom: 20px;
-  left: 30px;
-  right: 30px;
-}
-.date__block {
-  font-size: 17px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: rgb(255, 255, 255);
-}
+
+
 .title--26 {
   font-weight: 700;
   text-transform: uppercase;
@@ -185,48 +168,23 @@ body {
   margin-bottom: 20px;
   text-align: right;
 }
+
+.title-block {
+  margin-bottom: 30px;
+}
+
 .title {
   font-size: 35px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.title-block {
-  margin-bottom: 30px;
-}
+
 .title--28 {
   font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.table__head {
-  background: #085fff;
-  font-size: 16px;
-  font-weight: 600;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  text-transform: uppercase;
-  display: grid;
-}
-.grid-pts-table-sm {
-  grid-template-columns: 10% 35% repeat(5, 1fr);
-}
-.table__body {
-  align-items: center;
-  display: grid;
-  border-style: solid;
-  border-width: thin;
-  border-color: rgb(8, 95, 255);
-  border-top-width: 0;
-  font-size: 16px;
-  font-weight: 500;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  text-transform: uppercase;
-}
+
 .text-left {
   text-align: left;
 }
@@ -246,9 +204,7 @@ body {
 .text-red {
   color: rgb(255, 0, 0);
 }
-.table__team_block {
-  font-size: 17px;
-}
+
 .pos-sticky {
   position: sticky;
   top: 80px;
@@ -814,4 +770,20 @@ body {
   .section {
     margin-bottom: 30px;
   }
+
+  .title-block {
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .overlay__text {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 228, 25, 0) 65%
+  );
+}
 }

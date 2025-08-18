@@ -58,8 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
     loop: true,
     spaceBetween: 1,
     autoHeight: false,
-    
-   
+
+
     breakpoints: {
       320: { slidesPerView: 1, spaceBetween: 15 },
       600: { slidesPerView: 2, spaceBetween: 15 },
@@ -68,6 +68,17 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+  initSwiper('.news__swiper', {
+    // effect: 'fade',
+    slidesPerView: 1,
+    speed: 800,
+    grabCursor: true,
+    loop: true,
+    spaceBetween: 0,
+    autoHeight: false,
+    autoplay: { delay: 2000 },
+    // fadeEffect: { crossFade: true },
+  });
 
 });
 
