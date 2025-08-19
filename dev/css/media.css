@@ -50,6 +50,10 @@
   font-size: 26px;
 }
 
+.media-item__img_block {
+  height: 100%;
+}
+
 @media (max-width: 991.98px) {
   .league-info__rows {
     grid-template-columns: 1fr;
