@@ -1,0 +1,99 @@
+.teams__rows {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.team__logo_block {
+  background: #085fff;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all ease;
+}
+.team__logo_block:hover {
+  background-color: rgb(3, 49, 134);
+  transition: 0.3s all ease;
+}
+.teams__team_logo {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+}
+
+.team__info {
+  background: #262624;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.team__name_block {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.teams__team_name {
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.team__stats_item {
+  flex-basis: 25%;
+  font-weight: 500;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(8, 95, 255);
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  text-transform: capitalize;
+  row-gap: 8px;
+}
+.team__stats_item:first-child {
+  border-left-width: 0;
+}
+
+.team-info__items {
+  margin-bottom: 25px;
+}
+.team-info__item {
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+@media (max-width: 1119.98px) {
+  .teams__team_logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  .teams__team_name {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 449.98px) {
+  .team__logo_block {
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+  .teams__team_logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .teams__team_name {
+    font-size: 21px;
+  }
+
+  .team__stats_item .title--26 {
+    font-size: 23px;
+  }
+}

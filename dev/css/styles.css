@@ -7,6 +7,7 @@
 @import 'live.css';
 @import 'full.css';
 @import 'players.css';
+@import 'teams.css';
 @import 'swiper.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
@@ -122,8 +123,8 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 5px;
-  padding-top: 5px;
+  padding-bottom: 8px;
+  padding-top: 8px;
   transition: 0.3s all ease;
 }
 .link__btn:hover {
@@ -262,35 +263,7 @@ body {
   column-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
 }
-.team__logo_block {
-  background: #085fff;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s all ease;
-}
-.team__logo_block:hover {
-  background-color: rgb(3, 49, 134);
-  transition: 0.3s all ease;
-}
-.team-logo-80 {
-  height: 80px;
-  width: 80px;
-  object-fit: contain;
-}
-.team__info {
-  background: #262624;
-  padding-bottom: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-}
-.team__name_block {
-  margin-bottom: 15px;
-  text-align: center;
-}
+
 .title-link-26 {
   font-size: 26px;
   font-weight: 700;
@@ -299,20 +272,7 @@ body {
 .team__stats_block {
   margin-bottom: 25px;
 }
-.team__stats_item {
-  flex-basis: 25%;
-  font-weight: 500;
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgb(8, 95, 255);
-  border-top-width: 0;
-  border-right-width: 0;
-  border-bottom-width: 0;
-  text-transform: capitalize;
-}
-.team__stats_item:first-child {
-  border-left-width: 0;
-}
+
 .flx-clmn {
   display: flex;
   flex-direction: column;
@@ -324,15 +284,7 @@ body {
 .text-bold {
   font-weight: 700;
 }
-.team-info__items {
-  margin-bottom: 25px;
-}
-.team-info__item {
-  font-size: 17px;
-  font-weight: 500;
-  text-transform: capitalize;
-  text-align: center;
-}
+
 .card__description_block {
   color: rgb(218, 218, 218);
   text-transform: uppercase;
