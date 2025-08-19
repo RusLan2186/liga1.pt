@@ -5,6 +5,7 @@
 @import 'news.css';
 @import 'tables.css';
 @import 'live.css';
+@import 'full.css';
 @import 'swiper.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
@@ -338,41 +339,7 @@ body {
 .card__title_block {
   margin-bottom: 10px;
 }
-.full__section {
-  background-image: url('../images/213d991fbb54d244fcd0d8c9b4bcebb9.jpg');
-  background-size: cover;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  position: relative;
-  background-position-y: 600px;
-}
-.full__rows {
-  align-items: center;
-  display: grid;
-  grid-template-columns: 20% 50% 20%;
-  justify-content: space-between;
-  position: relative;
-  z-index: 10;
-}
-.full__info_block {
-  font-size: 20px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: rgb(255, 255, 255);
-}
-.full__team {
-  font-size: 30px;
-  font-weight: 700;
-  column-gap: 20px;
-  text-align: center;
-  text-transform: uppercase;
-}
-.full__score {
-  font-size: 40px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-}
+
 .link__btn--big {
   font-size: 20px;
   padding-bottom: 10px;
