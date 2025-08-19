@@ -11,6 +11,7 @@
 @import 'footer.css';
 @import 'review.css';
 @import 'post.css';
+@import 'player.css';
 @import 'pagination.css';
 @import 'swiper.css';
 
@@ -84,6 +85,10 @@ body {
   text-decoration: none;
   font-size: 16px;
   cursor: pointer;
+}
+
+.pdng--reset {
+  padding: 0;
 }
 
 .mb-reset {
@@ -434,68 +439,22 @@ body {
 .cup__img {
   height: 200px;
 }
-.player-head__section {
-  position: relative;
-  background-image: url('../images/df939cb0601d38980beeb53b51c39974.webp');
-  height: 65vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: -100px;
-  align-items: flex-end;
-  display: flex;
-  padding-bottom: 30px;
-}
+
 .overlay__blue {
   background: linear-gradient(to top, #085fff, #085fff 10%, transparent);
 }
-.player-head__content {
-  position: relative;
-  z-index: 10;
-}
+
 .title-60 {
   font-size: 60px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.player__params {
-  width: 100%;
-}
-.player-params__item {
-  font-size: 20px;
-  font-weight: 500;
-  text-transform: capitalize;
-}
-.player-head__info {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.stats-and-bio__rows {
-  column-gap: 20px;
-}
-.player-stats__item {
-  background: #085fff;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 500;
-  text-transform: capitalize;
-}
+
 .text-right {
   text-align: right;
 }
-.bio__block {
-  background: #262624;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;
-}
-.grid-player-table {
-  grid-template-columns: 15% 30% repeat(8, 1fr);
-}
+
+
 
 @media (max-width: 767.98px) {
   body.lock {

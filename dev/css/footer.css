@@ -67,6 +67,9 @@
 }
 
 @media (max-width: 849.98px) {
+  .footer {
+    padding-top: 30px;
+  }
   .footer__content {
     width: 100%;
     flex-direction: column;
@@ -84,10 +87,6 @@
 }
 
 @media (max-width: 549.98px) {
-  .footer {
-    padding-top: 30px;
-  }
-
   .footer__logo_img {
     height: 40px;
   }
