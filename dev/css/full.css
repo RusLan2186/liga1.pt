@@ -101,6 +101,7 @@
 }
 
 @media (max-width: 499.98px) {
+
   .full__info_block {
     justify-content: space-between;
     font-size: 17px;

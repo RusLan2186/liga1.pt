@@ -9,6 +9,8 @@
 @import 'players.css';
 @import 'teams.css';
 @import 'footer.css';
+@import 'review.css';
+@import 'post.css';
 @import 'pagination.css';
 @import 'swiper.css';
 
@@ -340,19 +342,11 @@ body {
   display: grid;
   grid-template-columns: 8% 25% repeat(8, 1fr);
 }
-.post__rows {
-  column-gap: 30px;
-}
-.post__content {
-  row-gap: 20px;
-}
+
 .pb-50pcr {
   padding-bottom: 50%;
 }
-.post__text_block {
-  font-size: 17px;
-  font-weight: 500;
-}
+
 .mb-30 {
   margin-bottom: 30px;
 }
@@ -376,71 +370,25 @@ body {
 .h-100pcr {
   height: 100%;
 }
-.review-head__rows {
-  position: relative;
-  z-index: 10;
-  align-items: center;
-  display: grid;
-  text-align: center;
-  margin-bottom: 10px;
-}
-.review-head__teams_block {
-  align-items: center;
-  display: flex;
-  margin-bottom: 40px;
-  justify-content: space-around;
-}
+
 .team-logo-120 {
   height: 120px;
   width: 120px;
   object-fit: contain;
 }
-.review-head__team_block {
-  align-items: flex-start;
-  display: flex;
-  column-gap: 30px;
-}
+
 .title-35 {
   font-size: 35px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.goals__block {
-  font-size: 18px;
-  font-weight: 600;
-  text-align: right;
-  text-transform: capitalize;
-}
-.review-head__score {
-  font-size: 50px;
-  font-weight: 700;
-}
-.review-head__video_block {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .overlay-head {
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(5px);
 }
-.review-stats__item {
-  font-size: 18px;
-  font-weight: 600;
-  padding-bottom: 8px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 8px;
-  text-transform: uppercase;
-  border-style: solid;
-  border-width: thin;
-  border-color: rgb(8, 95, 255);
-  border-top-width: 0;
-}
-.review-stats__item:first-child {
-  border-right-width: 0;
-  border-left-width: 0;
-}
+
+
 .bg-blue {
   background: #085fff;
 }

@@ -1,167 +1,453 @@
 <!DOCTYPE html>
 <html lang="pt">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>review</title>
-    <meta name="description" content="This is a new page.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="description" content="This is a review page." />
+
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
   <body>
-    <div class="body">
-      <div class="header mb-reset">
+    <div class="wrapper">
+      <header class="header">
         <div class="container">
-          <div class="header__content flx-btwn"><a class="link-reset header__logo_link" href="https://liga1.pt/"><img class="header__logo_img" src="/images/b35d8bd81f2a977d89218f6dd1de695c.png" /></a>
-            <div class="header__menu">
-              <ul class="reset header__menu_list">
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/post">post</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/video-post">video post</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/news">news</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/review">review</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/stats">stats</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/schedule">schedule</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/results">results</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/video">video</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/live">live</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/team">team</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/clubs">clubs</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/player">player</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/contact">contact</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/history">history</a></li>
+          <div class="header__content">
+            <a class="header__logo_link" href="/"
+              ><img
+                class="header__logo_img"
+                alt="logo"
+                src="/images/b35d8bd81f2a977d89218f6dd1de695c.png"
+              />
+            </a>
+            <nav class="header__nav">
+              <ul class="header__nav_list">
+                <li>
+                  <a class="header__nav_link" href="/pages/post.html">post</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/video-post.html"
+                    >video post</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="/pages/news.html"
+                    >news</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/stats.html">stats</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/review.html"
+                    >review</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/schedule.html"
+                    >calendar</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/results.html"
+                    >results</a
+                  >
+                </li>
+
+                <li>
+                  <a class="header__nav_link" href="/pages/history.html"
+                    >history</a
+                  >
+                </li>
+
+                <li>
+                  <a class="header__nav_link" href="/pages/video.html">video</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/live.html">live</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/club.html">club</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/clubs.html">clubs</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/player.html"
+                    >player</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/contact.html"
+                    >contact</a
+                  >
+                </li>
               </ul>
-            </div>
+            </nav>
+            <button class="header__burger">
+              <span class="header__burger-line"></span>
+            </button>
           </div>
         </div>
-      </div>
-      <div class="main">
-        <div class="full__section mb-50">
+      </header>
+      <main class="main">
+        <section class="full__section section">
           <div class="container">
             <div class="review-head__rows">
-              <div class="full__info_block mb-30">
-                <p class="mb-reset">liga 1</p>
-                <p class="reset title--20">Thursday 18.04. 22:00</p>
+              <div class="review-head__header">
+                <p class="text-blue">liga 1</p>
+                <p class="title--20">Thursday 18.04. 22:00</p>
               </div>
               <div class="review-head__teams_block">
-                <div class="review-head__team_block">
-                  <div class="review-head__team_info"><a href="#" class="hover-text link-reset title-35">lion marseille</a>
+                <div
+                  class="review-head__team_block review-head__team_block--reverse"
+                >
+                  <div class="review-head__team_info">
+                    <a href="#" class="hover-text review-head__team_name"
+                      >lion fc</a
+                    >
                     <div class="goals__block">
-                      <p class="mb-reset">82 - Nico Williams</p>
-                      <p class="mb-reset">68 - Yuri</p>
-                      <p class="mb-reset">74 - alex watsoni</p>
+                      <p>82 - Nico Williams</p>
+                      <p>68 - Yuri</p>
+                      <p>74 - alex watsoni</p>
                     </div>
-                  </div><a href="#" class="link-reset"><img src="/images/7458864cd36a14880a760822c3e0798e.webp" class="team-logo-120" /></a>
+                  </div>
+                  <a href="#"
+                    ><img
+                      src="/images/7458864cd36a14880a760822c3e0798e.webp"
+                      class="review-head__team_logo"
+                    />
+                  </a>
                 </div>
                 <div class="review-head__score"><span>3 : 2</span></div>
                 <div class="review-head__team_block">
-                  <div class="review-head__team_info"><a href="#" class="hover-text link-reset title-35">pari saint germain</a>
+                  <a href="#">
+                    <img
+                      src="/images/e7d35c20b74522b43bf72a32126b0d0d.webp"
+                      class="review-head__team_logo"
+                    />
+                  </a>
+                  <div class="review-head__team_info">
+                    <a href="#" class="hover-text review-head__team_name"
+                      >paris fc
+                    </a>
                     <div class="goals__block">
-                      <p class="mb-reset">08 - gavi pirson</p>
-                      <p class="mb-reset">15 - xavi hernandes</p>
-                      <p class="mb-reset"></p>
+                      <p>08 - gavi pirson</p>
+                      <p>15 - xavi hernandes</p>
+                      <p></p>
                     </div>
-                  </div><a href="#" class="link-reset"><img src="/images/e7d35c20b74522b43bf72a32126b0d0d.webp" class="team-logo-120" /></a>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="review-head__video_block">
-              <div class="live__item"><a href="#" class="link-reset live__video_item">
-                  <div class="media-item__img_block image-block"><img class="media__img ibg" src="/images/56baf89586b012079c3493f0f777fdd9.jpg" /><img class="play__icon hover-scale" src="/images/a8f3a64b0b171f379d5b540538e55281.png" /></div>
+              <div class="live__item review__live_item">
+                <a href="#" class="live__video_item">
+                  <div class="media-item__img_block image-block">
+                    <img
+                      class="media__img ibg"
+                      src="/images/56baf89586b012079c3493f0f777fdd9.jpg"
+                    /><img
+                      class="play__icon hover-scale"
+                      src="/images/a8f3a64b0b171f379d5b540538e55281.png"
+                    />
+                  </div>
                 </a>
                 <div class="live__info_block">
-                  <div class="match__head flx-btwn"><span>18.04.2025</span><span>Stade de France </span></div>
-                  <div class="match__body flx-btwn"><a class="flx-col link-reset match__team_block hover-text" href="#"><img class="team-logo-40" src="/images/7458864cd36a14880a760822c3e0798e.webp" /><span>lion fc</span></a>
-                    <div class="match__score"><span>vs</span></div><a class="flx-col link-reset match__team_block hover-text" href="#"><img class="team-logo-40" src="/images/e7d35c20b74522b43bf72a32126b0d0d.webp" /><span>psg</span></a>
+                  <div class="match__head flx-btwn">
+                    <span>18.04.2025</span><span>Stade de France </span>
                   </div>
-                  <div class="match__link_block"><a href="#" class="link-reset link__btn">watch match</a></div>
+                  <div class="match__body flx-btwn">
+                    <a
+                      class="flx-col link-reset match__team_block hover-text"
+                      href="#"
+                      ><img
+                        class="team-logo-40"
+                        src="/images/7458864cd36a14880a760822c3e0798e.webp"
+                      /><span>lion fc</span></a
+                    >
+                    <div class="match__score">
+                      <span>vs</span>
+                    </div>
+                    <a
+                      class="flx-col link-reset match__team_block hover-text"
+                      href="#"
+                      ><img
+                        class="team-logo-40"
+                        src="/images/e7d35c20b74522b43bf72a32126b0d0d.webp"
+                      /><span>psg</span></a
+                    >
+                  </div>
+                  <div class="match__link_block">
+                    <a href="#" class="link-reset link__btn">watch match</a>
+                  </div>
                 </div>
               </div>
+              <img
+                src="/images/a8f3a64b0b171f379d5b540538e55281.png"
+                class="review-head__play_icon hover-scale"
+              />
             </div>
           </div>
           <div class="ibg overlay-head"></div>
-        </div>
-        <div class="review__section mb-50">
+        </section>
+        <section class="review__section section">
           <div class="container">
             <div class="title-block">
-              <h2 class="mb-reset title">Lyon Stun PSG in Five-Goal Thriller</h2>
+              <h2 class="title">Lyon Stun PSG in Five-Goal Thriller</h2>
             </div>
-            <div class="post__rows grid-cols-69pcr-1fr">
+            <div class="post__rows">
               <div class="post__content flx-clmn">
-                <div class="pb-50pcr image-block"><img class="media__img ibg" src="/images/8cf808655cf5c89dbd129b2fc04ba3d3.jpg" /></div>
+                <div class="post__img_block image-block">
+                  <img
+                    class="media__img ibg"
+                    src="/images/8cf808655cf5c89dbd129b2fc04ba3d3.jpg"
+                  />
+                </div>
                 <div class="post__text_block">
-                  <p>In one of the most entertaining matches of the Ligue 1 season, Olympique Lyonnais pulled off a stunning 3-2 victory over Paris Saint-Germain at Groupama Stadium. The win not only bolsters Lyon’s late-season European hopes but also sends a strong message that the team’s revival under Pierre Sage is no fluke.
-
-                    The match started with PSG in control, dominating possession and opening the scoring in the 14th minute through Ousmane Dembélé, who calmly finished after a slick passing move. Lyon, however, responded quickly. Alexandre Lacazette leveled the match with a powerful header from a corner just seven minutes later.</p>
-                  <p>The turning point came early in the second half. Rayan Cherki, a constant menace on the left wing, cut inside and curled a beautiful shot into the top corner to give Lyon the lead. PSG’s defense looked rattled, and Lyon took full advantage when Maxence Caqueret made it 3-1 with a clever run and finish following a midfield turnover.
-
-                    Luis Enrique threw on extra firepower, including a returning Kylian Mbappé, who pulled one back in the 83rd minute. But it wasn’t enough. Lyon’s backline held firm in the dying minutes, with Anthony Lopes making a crucial save in stoppage time to deny Vitinha.</p>
-                  <p class="mb-reset">For Lyon, it’s a statement win. From bottom of the table in the first half of the season to now just a few points off a European spot, the transformation is nothing short of remarkable. The players celebrated with their fans long after the final whistle — a clear sign of how much this win meant.
-
-                    For PSG, it’s a sobering loss. Despite their attacking power, they were second-best in desire and focus. With the title race already leaning their way, perhaps there was a drop in intensity — but Lyon made them pay for it. Questions remain about PSG’s defensive consistency, especially heading into the final stretch of the season.</p>
+                  <p>
+                    In one of the most entertaining matches of the Ligue 1
+                    season, Olympique Lyonnais pulled off a stunning 3-2 victory
+                    over Paris Saint-Germain at Groupama Stadium. The win not
+                    only bolsters Lyon’s late-season European hopes but also
+                    sends a strong message that the team’s revival under Pierre
+                    Sage is no fluke. The match started with PSG in control,
+                    dominating possession and opening the scoring in the 14th
+                    minute through Ousmane Dembélé, who calmly finished after a
+                    slick passing move. Lyon, however, responded quickly.
+                    Alexandre Lacazette leveled the match with a powerful header
+                    from a corner just seven minutes later.
+                  </p>
+                  <p>
+                    The turning point came early in the second half. Rayan
+                    Cherki, a constant menace on the left wing, cut inside and
+                    curled a beautiful shot into the top corner to give Lyon the
+                    lead. PSG’s defense looked rattled, and Lyon took full
+                    advantage when Maxence Caqueret made it 3-1 with a clever
+                    run and finish following a midfield turnover. Luis Enrique
+                    threw on extra firepower, including a returning Kylian
+                    Mbappé, who pulled one back in the 83rd minute. But it
+                    wasn’t enough. Lyon’s backline held firm in the dying
+                    minutes, with Anthony Lopes making a crucial save in
+                    stoppage time to deny Vitinha.
+                  </p>
+                  <p>
+                    For Lyon, it’s a statement win. From bottom of the table in
+                    the first half of the season to now just a few points off a
+                    European spot, the transformation is nothing short of
+                    remarkable. The players celebrated with their fans long
+                    after the final whistle — a clear sign of how much this win
+                    meant. For PSG, it’s a sobering loss. Despite their
+                    attacking power, they were second-best in desire and focus.
+                    With the title race already leaning their way, perhaps there
+                    was a drop in intensity — but Lyon made them pay for it.
+                    Questions remain about PSG’s defensive consistency,
+                    especially heading into the final stretch of the season.
+                  </p>
                 </div>
               </div>
               <div class="aside">
-                <div class="review__stat_section mb-50">
-                  <div class="flx-btwn review-stats__item bg-blue"><img class="team-logo-40" src="/images/7458864cd36a14880a760822c3e0798e.webp" /><span class="title--26">vs</span><img class="team-logo-40" src="/images/e7d35c20b74522b43bf72a32126b0d0d.webp" /></div>
-                  <div class="flx-btwn review-stats__item"><span class="text-green">10</span><span>shots</span><span class="text-red">9</span></div>
-                  <div class="flx-btwn review-stats__item"><span class="text-green">7</span><span>shots on target</span><span class="text-red">4</span></div>
-                  <div class="flx-btwn review-stats__item"><span class="text-red">47</span><span>Possession %</span><span class="text-green">53</span></div>
-                  <div class="flx-btwn review-stats__item"><span class="text-green">327</span><span>passes</span><span class="text-red">289</span></div>
-                  <div class="flx-btwn review-stats__item"><span class="text-red">87</span><span>passing accuracy %</span><span class="text-green">92</span></div>
-                  <div class="flx-btwn review-stats__item"><span class="text-green">11</span><span>Fouls</span><span class="text-red">15</span></div>
-                  <div class="flx-btwn review-stats__item"><span class="text-red">4</span><span>Corners</span><span class="text-green">8</span></div>
-                  <div class="flx-btwn review-stats__item"><span class="text-red">3</span><span>offsides</span><span class="text-green">5</span></div>
-                  <div class="flx-btwn review-stats__item"><span class="text-green">2</span><span>Yellow Cards</span><span class="text-red">5</span></div>
-                  <div class="flx-btwn review-stats__item"><span class="text-green">0</span><span>red Cards</span><span class="text-red">1</span></div>
+                <div class="review__stat_section">
+                  <div class="flx-btwn review-stats__item bg-blue">
+                    <img
+                      class="review__stat_logo"
+                      src="/images/7458864cd36a14880a760822c3e0798e.webp"
+                    /><span class="title--26">vs</span
+                    ><img
+                      class="team-logo-40"
+                      src="/images/e7d35c20b74522b43bf72a32126b0d0d.webp"
+                    />
+                  </div>
+                  <div class="flx-btwn review-stats__item">
+                    <span class="text-green">10</span><span>shots</span
+                    ><span class="text-red">9</span>
+                  </div>
+                  <div class="flx-btwn review-stats__item">
+                    <span class="text-green">7</span><span>shots on target</span
+                    ><span class="text-red">4</span>
+                  </div>
+                  <div class="flx-btwn review-stats__item">
+                    <span class="text-red">47</span><span>Possession %</span
+                    ><span class="text-green">53</span>
+                  </div>
+                  <div class="flx-btwn review-stats__item">
+                    <span class="text-green">327</span><span>passes</span
+                    ><span class="text-red">289</span>
+                  </div>
+                  <div class="flx-btwn review-stats__item">
+                    <span class="text-red">87</span
+                    ><span>passing accuracy %</span
+                    ><span class="text-green">92</span>
+                  </div>
+                  <div class="flx-btwn review-stats__item">
+                    <span class="text-green">11</span><span>Fouls</span
+                    ><span class="text-red">15</span>
+                  </div>
+                  <div class="flx-btwn review-stats__item">
+                    <span class="text-red">4</span><span>Corners</span
+                    ><span class="text-green">8</span>
+                  </div>
+                  <div class="flx-btwn review-stats__item">
+                    <span class="text-red">3</span><span>offsides</span
+                    ><span class="text-green">5</span>
+                  </div>
+                  <div class="flx-btwn review-stats__item">
+                    <span class="text-green">2</span><span>Yellow Cards</span
+                    ><span class="text-red">5</span>
+                  </div>
+                  <div class="flx-btwn review-stats__item">
+                    <span class="text-green">0</span><span>red Cards</span
+                    ><span class="text-red">1</span>
+                  </div>
                 </div>
                 <div class="aside__table_section pos-sticky">
                   <div class="table__wrap">
-                    <div class="table__head grid-pts-table-sm"><span>#</span><span class="text-left">team</span><span>g</span><span>w</span><span>d</span><span>l</span><span>p</span></div>
-                    <div class="table__body grid-pts-table-sm"><span class="uw2y605k">1.</span><a href="#" class="flx-gap-10 hover-text link-reset table__team_block"><img class="team-logo-30" src="/images/e7d35c20b74522b43bf72a32126b0d0d.webp" /><span>psg</span></a><span>28</span><span class="text-green">20</span><span>5</span><span class="text-red">4</span><b>62</b></div>
-                    <div class="table__body grid-pts-table-sm"><span class="uw2y605k">2.</span><a href="#" class="flx-gap-10 hover-text link-reset table__team_block"><img class="team-logo-30" src="/images/7458864cd36a14880a760822c3e0798e.webp" /><span>lion</span></a><span>28</span><span class="text-green">20</span><span>5</span><span class="text-red">4</span><b>59</b></div>
-                    <div class="table__body grid-pts-table-sm"><span class="uw2y605k">3.</span><a href="#" class="flx-gap-10 hover-text link-reset table__team_block"><img class="team-logo-30" src="/images/f32bea7b64b20322c12350e3736f7455.png" /><span>marselle</span></a><span>28</span><span class="text-green">20</span><span>5</span><span class="text-red">4</span><b>55</b></div>
-                    <div class="table__body grid-pts-table-sm"><span class="uw2y605k">4.</span><a href="#" class="flx-gap-10 hover-text link-reset table__team_block"><img class="team-logo-30" src="/images/a259089e4222061a1602d66e480997d1.png" /><span>rennais</span></a><span>28</span><span class="text-green">20</span><span>5</span><span class="text-red">4</span><b>51</b></div>
-                    <div class="table__body grid-pts-table-sm"><span class="uw2y605k">5.</span><a href="#" class="flx-gap-10 hover-text link-reset table__team_block"><img class="team-logo-30" src="/images/daf09a43cd9ac03a096244bba630c820.png" /><span>nante</span></a><span>28</span><span class="text-green">20</span><span>5</span><span class="text-red">4</span><b>49</b></div>
-                    <div class="table__body grid-pts-table-sm"><span class="uw2y605k">6.</span><a href="#" class="flx-gap-10 hover-text link-reset table__team_block"><img class="team-logo-30" src="/images/6f589f3f8d521c9fb32e6ce740a5a348.png" /><span>hac</span></a><span>28</span><span class="text-green">20</span><span>5</span><span class="text-red">4</span><b>48</b></div>
-                    <div class="table__body grid-pts-table-sm"><span class="uw2y605k">7.</span><a href="#" class="flx-gap-10 hover-text link-reset table__team_block"><img class="team-logo-30" src="/images/66f35ab2800a6086bea703949dcb525d.png" /><span>tuluza</span></a><span>28</span><span class="text-green">20</span><span>5</span><span class="text-red">4</span><b>46</b></div>
+                    <div class="table__head grid-pts-table-sm">
+                      <span>#</span><span class="text-left">team</span
+                      ><span>g</span><span>w</span><span>d</span><span>l</span
+                      ><span>p</span>
+                    </div>
+                    <div class="table__body grid-pts-table-sm">
+                      <span class="uw2y605k">1.</span
+                      ><a
+                        href="#"
+                        class="flx-gap-10 hover-text link-reset table__team_block"
+                        ><img
+                          class="team-logo-30"
+                          src="/images/e7d35c20b74522b43bf72a32126b0d0d.webp"
+                        /><span>psg</span></a
+                      ><span>28</span><span class="text-green">20</span
+                      ><span>5</span><span class="text-red">4</span><b>62</b>
+                    </div>
+                    <div class="table__body grid-pts-table-sm">
+                      <span class="uw2y605k">2.</span
+                      ><a
+                        href="#"
+                        class="flx-gap-10 hover-text link-reset table__team_block"
+                        ><img
+                          class="team-logo-30"
+                          src="/images/7458864cd36a14880a760822c3e0798e.webp"
+                        /><span>lion</span></a
+                      ><span>28</span><span class="text-green">20</span
+                      ><span>5</span><span class="text-red">4</span><b>59</b>
+                    </div>
+                    <div class="table__body grid-pts-table-sm">
+                      <span class="uw2y605k">3.</span
+                      ><a
+                        href="#"
+                        class="flx-gap-10 hover-text link-reset table__team_block"
+                        ><img
+                          class="team-logo-30"
+                          src="/images/f32bea7b64b20322c12350e3736f7455.png"
+                        /><span>marselle</span></a
+                      ><span>28</span><span class="text-green">20</span
+                      ><span>5</span><span class="text-red">4</span><b>55</b>
+                    </div>
+                    <div class="table__body grid-pts-table-sm">
+                      <span class="uw2y605k">4.</span
+                      ><a
+                        href="#"
+                        class="flx-gap-10 hover-text link-reset table__team_block"
+                        ><img
+                          class="team-logo-30"
+                          src="/images/a259089e4222061a1602d66e480997d1.png"
+                        /><span>rennais</span></a
+                      ><span>28</span><span class="text-green">20</span
+                      ><span>5</span><span class="text-red">4</span><b>51</b>
+                    </div>
+                    <div class="table__body grid-pts-table-sm">
+                      <span class="uw2y605k">5.</span
+                      ><a
+                        href="#"
+                        class="flx-gap-10 hover-text link-reset table__team_block"
+                        ><img
+                          class="team-logo-30"
+                          src="/images/daf09a43cd9ac03a096244bba630c820.png"
+                        /><span>nante</span></a
+                      ><span>28</span><span class="text-green">20</span
+                      ><span>5</span><span class="text-red">4</span><b>49</b>
+                    </div>
+                    <div class="table__body grid-pts-table-sm">
+                      <span class="uw2y605k">6.</span
+                      ><a
+                        href="#"
+                        class="flx-gap-10 hover-text link-reset table__team_block"
+                        ><img
+                          class="team-logo-30"
+                          src="/images/6f589f3f8d521c9fb32e6ce740a5a348.png"
+                        /><span>hac</span></a
+                      ><span>28</span><span class="text-green">20</span
+                      ><span>5</span><span class="text-red">4</span><b>48</b>
+                    </div>
+                    <div class="table__body grid-pts-table-sm">
+                      <span class="uw2y605k">7.</span
+                      ><a
+                        href="#"
+                        class="flx-gap-10 hover-text link-reset table__team_block"
+                        ><img
+                          class="team-logo-30"
+                          src="/images/66f35ab2800a6086bea703949dcb525d.png"
+                        /><span>tuluza</span></a
+                      ><span>28</span><span class="text-green">20</span
+                      ><span>5</span><span class="text-red">4</span><b>46</b>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="footer">
+        </section>
+      </main>
+      <footer class="footer">
         <div class="container">
-          <div class="footer__content flx-btwn"><a href="#" class="link-reset footer__logo_block"><img class="footer__logo_img" src="/images/b35d8bd81f2a977d89218f6dd1de695c.png" /></a>
-            <div class="footer__menu flx-btwn">
+          <div class="footer__content">
+            <a href="#" class="link-reset footer__logo_block"
+              ><img
+                class="footer__logo_img"
+                src="/images/b35d8bd81f2a977d89218f6dd1de695c.png"
+            /></a>
+            <div class="footer__menu">
               <div class="footer__menu_item">
                 <div class="footer-item__title_block">
-                  <h4 class="title--26 mb-reset">Legal</h4>
+                  <h4 class="footer__title">Legal</h4>
                 </div>
-                <div class="footer-menu__nav flx-clmn"><a href="#" class="hover-text link-reset footer__link">Legal notice</a><a href="#" class="hover-text link-reset footer__link">Our partnerships
-                  </a><a href="#" class="hover-text link-reset footer__link">Accessiblity
-                  </a><a href="#" class="hover-text link-reset footer__link">Official broadcasters</a><a href="#" class="hover-text link-reset footer__link">Data protection
-                  </a></div>
+                <div class="footer-menu__nav">
+                  <a href="#" class="hover-text footer__link">Legal notice</a
+                  ><a href="#" class="hover-text footer__link"
+                    >Our partnerships </a
+                  ><a href="#" class="hover-text footer__link">Accessiblity </a
+                  ><a href="#" class="hover-text footer__link"
+                    >Official broadcasters</a
+                  ><a href="#" class="hover-text footer__link"
+                    >Data protection
+                  </a>
+                </div>
               </div>
               <div class="footer__menu_item">
                 <div class="footer-item__title_block">
-                  <h4 class="title--26 mb-reset">LFP brands</h4>
+                  <h4 class="footer__title">LFP brands</h4>
                 </div>
-                <div class="footer-menu__nav flx-clmn"><a href="#" class="hover-text link-reset footer__link"> coach ligue 1
-                  </a><a href="#" class="hover-text link-reset footer__link">LFP
-                  </a><a href="#" class="hover-text link-reset footer__link">11 type LFP</a><a href="#" class="hover-text link-reset footer__link">MPG</a><a href="#" class="hover-text link-reset footer__link">LFP brands
-                  </a></div>
+                <div class="footer-menu__nav">
+                  <a href="#" class="hover-text footer__link"> coach ligue 1 </a
+                  ><a href="#" class="hover-text footer__link">LFP </a
+                  ><a href="#" class="hover-text footer__link">11 type LFP</a
+                  ><a href="#" class="hover-text footer__link">MPG</a
+                  ><a href="#" class="hover-text footer__link">LFP brands </a>
+                </div>
               </div>
               <div class="footer__menu_item">
                 <div class="footer-item__title_block">
-                  <h4 class="title--26 mb-reset">useful info</h4>
+                  <h4 class="footer__title">useful info</h4>
                 </div>
-                <div class="footer-menu__nav flx-clmn"><a href="#" class="hover-text link-reset footer__link">clubs</a><a href="#" class="hover-text link-reset footer__link">rating</a><a href="#" class="hover-text link-reset footer__link">players
-                  </a><a href="#" class="hover-text link-reset footer__link">stats</a><a href="#" class="hover-text link-reset footer__link">contacts</a></div>
+                <div class="footer-menu__nav">
+                  <a href="#" class="footer__link hover-text">clubs</a
+                  ><a href="#" class="footer__link hover-text">rating</a
+                  ><a href="#" class="footer__link hover-text">players </a
+                  ><a href="#" class="footer__link hover-text">stats</a
+                  ><a href="#" class="footer__link hover-text">contacts</a>
+                </div>
               </div>
             </div>
           </div>
@@ -169,8 +455,8 @@
             <p class="mb-reset">© 2025 – liga1.pt. All Rights Reserved</p>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
+    <script type="module" src="/js/menuBurger.js"></script>
   </body>
-
 </html>

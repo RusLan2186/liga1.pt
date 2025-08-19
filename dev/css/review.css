@@ -1,0 +1,223 @@
+.review-head__rows {
+  position: relative;
+  z-index: 10;
+  align-items: center;
+  display: grid;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.review-head__header {
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+  row-gap: 15px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.review-head__teams_block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.review-head__team_block {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 30px;
+}
+
+.review-head__team_name {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.review-head__team_logo {
+  height: 120px;
+  width: 120px;
+  object-fit: contain;
+}
+
+.goals__block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  font-size: 18px;
+  color: #dadada;
+  font-weight: 600;
+  text-align: right;
+  text-transform: capitalize;
+}
+
+.review-head__score {
+  align-self: center;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.review-head__video_block {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.review-head__play_icon {
+  display: none;
+  position: relative;
+  z-index: 10;
+  height: 65px;
+}
+
+.review__stat_section {
+  margin-bottom: 30px;
+}
+
+.review-stats__item {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(8, 95, 255);
+  border-top-width: 0;
+}
+
+.review-stats__item:first-child {
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+.review__stat_logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+@media (max-width: 1199.98px) {
+  .review-head__team_name {
+    font-size: 30px;
+  }
+
+  .review-head__team_logo {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .review-head__team_name {
+    font-size: 25px;
+  }
+
+  .review-head__team_logo {
+    height: 75px;
+    width: 75px;
+  }
+
+  .review-head__video_block {
+    width: 70%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .review-head__teams_block {
+    justify-content: space-between;
+  }
+
+  .review-head__team_block {
+    flex-direction: column;
+    align-items: center;
+    column-gap: 0px;
+    row-gap: 15px;
+  }
+
+  .review-head__team_block--reverse {
+    flex-direction: column-reverse;
+  }
+
+  .review-head__team_name {
+    font-size: 24px;
+  }
+
+  .review-head__team_logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  .review-head__score {
+    align-self: flex-start;
+    margin-top: 15px;
+    font-size: 38px;
+  }
+
+  .review-head__video_block {
+    width: 100%;
+  }
+}
+
+@media (max-width: 549.98px) {
+  .review-head__teams_block {
+    margin-bottom: 0px;
+  }
+
+  .review-head__team_name {
+    margin-bottom: 10px;
+  }
+
+  .review-head__team_logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  .review-head__team_name {
+    font-size: 22px;
+  }
+
+  .review-head__score {
+    font-size: 34px;
+  }
+
+  .goals__block {
+    row-gap: 10px;
+    font-size: 16px;
+  }
+
+  .review__live_item {
+    display: none;
+  }
+
+  .review-head__video_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-head__play_icon {
+    display: block;
+  }
+
+  .review-stats__item {
+    font-size: 16px;
+  }
+
+  .review-stats__item .title--26 {
+    font-size: 22px;
+  }
+
+  .review-stats__item:first-child {
+    padding: 5px 20px;
+  }
+
+  .review__stat_logo {
+    width: 30px;
+    height: 30px;
+  }
+}

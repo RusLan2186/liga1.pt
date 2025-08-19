@@ -1,0 +1,38 @@
+.post__rows {
+  display: grid;
+  grid-template-columns: 69% 1fr;
+  column-gap: 30px;
+  row-gap: 20px;
+}
+
+.post__content {
+  row-gap: 20px;
+}
+
+.post__img_block {
+  padding-bottom: 50%;
+}
+
+.post__text_block {
+  line-height: 1.3;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.post__text_block p:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1199.98px) {
+  .post__rows {
+    grid-template-columns: 65% 1fr;
+  }
+}
+
+@media (max-width: 991.98px){
+  .post__rows {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 449.98px){}
