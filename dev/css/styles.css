@@ -9,6 +9,7 @@
 @import 'players.css';
 @import 'teams.css';
 @import 'footer.css';
+@import 'pagination.css';
 @import 'swiper.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
@@ -334,28 +335,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
-.pagination__block {
-  display: flex;
-  justify-content: center;
-  column-gap: 8px;
-  margin-top: 30px;
-}
-.pag__item {
-  background: #085fff;
-  font-weight: 600;
-  padding-bottom: 2px;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 2px;
-  transition: 0.3s all ease;
-}
-.pag__item:hover {
-  background: #033186;
-  transition: 0.3s all ease;
-}
-.pag-item--active {
-  background: #033186;
-}
+
 .grid-pts-table {
   display: grid;
   grid-template-columns: 8% 25% repeat(8, 1fr);
@@ -392,10 +372,7 @@ body {
   text-transform: capitalize;
   row-gap: 10px;
 }
-.news__rows {
-  column-gap: 15px;
-  margin-bottom: 15px;
-}
+
 .h-100pcr {
   height: 100%;
 }

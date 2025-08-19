@@ -1,0 +1,20 @@
+.pagination__block {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  margin-top: 30px;
+}
+.pag__item {
+  background: #085fff;
+  color:rgb(255, 255, 255);
+  font-weight: 600;
+  padding: 4px 8px;
+  font-size: 17px;
+  transition: 0.3s background-color;
+}
+.pag__item:hover {
+  background: #033186;
+}
+.pag-item--active {
+  background: #033186;
+}
