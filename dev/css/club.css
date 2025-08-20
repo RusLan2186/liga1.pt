@@ -1,0 +1,120 @@
+.club-head__section {
+  background-image: url('../images/37a4d912b8074e8dc43ac1cf2d3b2eed.webp');
+  background-size: cover;
+  padding-bottom: 50px;
+  padding-top: 90px;
+  background-position-y: center;
+  position: relative;
+}
+.team-head__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  position: relative;
+  z-index: 10;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.club-headteam-logo {
+  height: 120px;
+  width: 120px;
+  object-fit: contain;
+}
+
+.text-and-img__block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.about__rows {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+.about__item {
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(38, 38, 36);
+  display: flex;
+  flex-direction: column;
+}
+
+.about__title {
+  font-size: 22px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+.about__img {
+  object-position: 10px 10px;
+}
+
+.cups__rows {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+}
+
+.cup__item {
+  background: #262624;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  row-gap: 15px;
+  text-align: center;
+}
+
+.cup__title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.cup__img {
+  height: 200px;
+}
+
+@media (max-width: 1099.98px) {
+  .cups__rows {
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .team-head__content {
+    font-size: 35px;
+  }
+
+  .club-headteam-logo {
+    height: 80px;
+    width: 80px;
+  }
+  .cup__title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 599.98px) {
+  .club-head__section {
+    padding-bottom: 30px;
+    padding-top: 80px;
+  }
+  .team-head__content {
+    font-size: 30px;
+  }
+
+  .club-headteam-logo {
+    height: 65px;
+    width: 65px;
+  }
+
+  .cup__img {
+    height: 170px;
+  }
+}
