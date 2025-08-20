@@ -15,6 +15,7 @@
 @import 'club.css';
 @import 'history.css';
 @import 'contact.css';
+@import 'calendar.css';
 @import 'pagination.css';
 @import 'swiper.css';
 
@@ -133,11 +134,10 @@ body {
   text-align: center;
   padding-bottom: 8px;
   padding-top: 8px;
-  transition: 0.3s all ease;
+  transition: 0.3s background-color;
 }
 .link__btn:hover {
   background-color: rgb(3, 49, 134);
-  transition: 0.3s all ease;
 }
 
 .grid-cols-69pcr-1fr {
@@ -302,47 +302,6 @@ body {
   );
   backdrop-filter: blur(4px);
 }
-
-.calendar__month {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-.grid-cols-7 {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-}
-.calendar__day {
-  border-style: solid;
-  border-width: thin;
-  border-color: rgb(8, 95, 255);
-  border-top-width: 0;
-  border-left-width: 0;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-}
-.calendar__day:first-child {
-  border-left-width: thin;
-}
-.calendar__date {
-  font-size: 18px;
-  font-weight: 700;
-  color: rgb(8, 95, 255);
-  margin-bottom: 5px;
-  text-align: center;
-}
-.calendar-day__body {
-  margin-bottom: 15px;
-}
-.calendar__team_block {
-  font-size: 19px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-
 
 .pb-50pcr {
   padding-bottom: 50%;
