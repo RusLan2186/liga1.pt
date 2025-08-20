@@ -53,6 +53,10 @@
   object-position: 10px 10px;
 }
 
+.card__title_block {
+  margin-bottom: 10px;
+}
+
 .cups__rows {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -67,6 +71,7 @@
   padding-top: 15px;
   row-gap: 15px;
   text-align: center;
+  height: 100%;
 }
 
 .cup__title {

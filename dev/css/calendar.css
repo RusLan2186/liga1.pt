@@ -19,6 +19,7 @@
   border-radius: 0.25rem; /* 4px */
   padding: 0.375rem 0.75rem; /* 6px 12px */
   font-weight: 600;
+  transition:  0.3s background-color;
 }
 .fc .fc-button:hover {
   background-color: rgb(8, 95, 255);

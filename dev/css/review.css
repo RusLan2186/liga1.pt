@@ -1,3 +1,7 @@
+.review__full_section {
+  padding-top: 100px;
+}
+
 .review-head__rows {
   position: relative;
   z-index: 10;
@@ -164,6 +168,9 @@
 }
 
 @media (max-width: 549.98px) {
+  .review__full_section {
+    padding-top: 80px;
+  }
   .review-head__teams_block {
     margin-bottom: 0px;
   }

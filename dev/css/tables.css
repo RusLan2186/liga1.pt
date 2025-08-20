@@ -56,7 +56,7 @@
 
 @media (max-width: 899.98px) {
   .points-table__wrapper {
-    overflow: scroll;
+    overflow-x: scroll;
   }
   .grid-pts-table {
     width: 950px;
