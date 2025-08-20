@@ -6,8 +6,8 @@ const calendar = new FullCalendar.Calendar(calendarEl, {
     {
       start: '2025-08-04',
       extendedProps: {
-        homeLogo: '/images/66f35ab2800a6086bea703949dcb525d.png',
-        awayLogo: '/images/daf09a43cd9ac03a096244bba630c820.png',
+        homeLogo: '/images/66f35ab2800a6086bea703949dcb525d-DFfiyhXi.png',
+        awayLogo: '/images/daf09a43cd9ac03a096244bba630c820-DKl5286n.png',
         homeShort: 'tol',
         awayShort: 'nan',
         time: '2 : 0',
@@ -17,8 +17,8 @@ const calendar = new FullCalendar.Calendar(calendarEl, {
     {
       start: '2025-08-04',
       extendedProps: {
-        homeLogo: '/images/66f35ab2800a6086bea703949dcb525d.png',
-        awayLogo: '/images/daf09a43cd9ac03a096244bba630c820.png',
+        homeLogo: '/images/66f35ab2800a6086bea703949dcb525d-DFfiyhXi.png',
+        awayLogo: '/images/daf09a43cd9ac03a096244bba630c820-DKl5286n.png',
         homeShort: 'tol',
         awayShort: 'nan',
         time: '2 : 0',
