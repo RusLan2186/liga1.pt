@@ -33,7 +33,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 0px;
 }
 ::-webkit-scrollbar:horizontal {
   height: 3px;
@@ -341,10 +341,7 @@ body {
   text-transform: uppercase;
 }
 
-.grid-pts-table {
-  display: grid;
-  grid-template-columns: 8% 25% repeat(8, 1fr);
-}
+
 
 .pb-50pcr {
   padding-bottom: 50%;

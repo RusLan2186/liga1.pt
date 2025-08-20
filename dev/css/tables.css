@@ -1,3 +1,12 @@
+.grid-pts-table {
+  display: grid;
+  grid-template-columns: 8% 25% repeat(8, 1fr);
+}
+
+.grid-pts-table-sm {
+  grid-template-columns: 10% 35% repeat(5, 1fr);
+}
+
 .table__head {
   background: #085fff;
   font-size: 16px;
@@ -9,9 +18,7 @@
   text-transform: uppercase;
   display: grid;
 }
-.grid-pts-table-sm {
-  grid-template-columns: 10% 35% repeat(5, 1fr);
-}
+
 .table__body {
   align-items: center;
   display: grid;
@@ -32,17 +39,82 @@
   font-size: 17px;
 }
 
-.table__team_logo{
+.table__team_logo {
   height: 30px;
   width: 30px;
   object-fit: contain;
 }
 
-.grid-pts-table-sm .table__team_block{
+.grid-pts-table-sm .table__team_block {
   font-size: 15px;
 }
 
-.grid-pts-table-sm .table__team_logo{
+.grid-pts-table-sm .table__team_logo {
   height: 25px;
   width: 25px;
+}
+
+@media (max-width: 899.98px) {
+  .points-table__wrapper {
+    overflow: scroll;
+  }
+  .grid-pts-table {
+    width: 950px;
+    grid-template-columns: 70px 220px repeat(8, 1fr);
+  }
+
+  .table__head.grid-pts-table span:nth-of-type(-n + 2) {
+    position: sticky;
+    background-color:  rgb(8, 95, 255);
+    z-index: 10;
+  }
+
+  .table__head.grid-pts-table span:nth-of-type(1) {
+    left: 0;
+  }
+  .table__head.grid-pts-table span:nth-of-type(2) {
+    left: 70px; /* 100px */
+  }
+
+  .table__body.grid-pts-table > :nth-child(-n + 2) {
+    position: sticky;
+    background-color: rgb(0, 0, 0);
+    z-index: 10;
+  }
+
+  .table__body.grid-pts-table > :nth-child(1) {
+    left: 0;
+  }
+  .table__body.grid-pts-table > :nth-child(2) {
+    left: 70px;
+  }
+}
+
+@media (max-width: 599.98px) {
+  .grid-pts-table {
+    width: 650px;
+    grid-template-columns: 70px 180px repeat(8, 1fr);
+  }
+
+  .grid-pts-table .table__team_block {
+    font-size: 15px;
+  }
+  .grid-pts-table .team-logo-30 {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+@media (max-width: 449.98px) {
+  .grid-pts-table {
+    width: 540px;
+    grid-template-columns: 40px 160px repeat(8, 1fr);
+  }
+  .table__head.grid-pts-table span:nth-of-type(2) {
+    left: 40px;
+  }
+
+  .table__body.grid-pts-table > :nth-child(2) {
+    left: 40px;
+  }
 }
