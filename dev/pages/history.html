@@ -1,303 +1,967 @@
 <!DOCTYPE html>
 <html lang="pt">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>history</title>
-    <meta name="description" content="This is a new page.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="description" content="This is a history page." />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
-    <div class="body">
-      <div class="header">
+    <div class="wrapper">
+      <header class="header">
         <div class="container">
-          <div class="header__content flx-btwn"><a class="link-reset header__logo_link" href="https://liga1.pt/"><img class="header__logo_img" src="/images/b35d8bd81f2a977d89218f6dd1de695c.png" /></a>
-            <div class="header__menu">
-              <ul class="reset header__menu_list">
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/post">post</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/video-post">video post</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/news">news</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/review">review</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/stats">stats</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/schedule">schedule</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/results">results</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/video">video</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/live">live</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/team">team</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/clubs">clubs</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/player">player</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/contact">contact</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/history">history</a></li>
+          <div class="header__content">
+            <a class="header__logo_link" href="/"
+              ><img
+                class="header__logo_img"
+                alt="logo"
+                src="/images/b35d8bd81f2a977d89218f6dd1de695c.png"
+              />
+            </a>
+            <nav class="header__nav">
+              <ul class="header__nav_list">
+                <li>
+                  <a class="header__nav_link" href="/pages/post.html">post</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/video-post.html"
+                    >video post</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="/pages/news.html"
+                    >news</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/stats.html">stats</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/review.html"
+                    >review</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/schedule.html"
+                    >calendar</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/results.html"
+                    >results</a
+                  >
+                </li>
+
+                <li>
+                  <a class="header__nav_link" href="/pages/history.html"
+                    >history</a
+                  >
+                </li>
+
+                <li>
+                  <a class="header__nav_link" href="/pages/video.html">video</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/live.html">live</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/club.html">club</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/clubs.html">clubs</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/player.html"
+                    >player</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/contact.html"
+                    >contact</a
+                  >
+                </li>
               </ul>
-            </div>
+            </nav>
+            <button class="header__burger">
+              <span class="header__burger-line"></span>
+            </button>
           </div>
         </div>
-      </div>
-      <div class="main">
-        <div class="history__section mb-50">
+      </header>
+      <main class="main">
+        <section class="history__section section">
           <div class="container">
             <div class="title-block">
-              <h2 class="title mb-reset">history</h2>
+              <h2 class="title">history</h2>
             </div>
-            <div class="text-and-img__block grid-col-2">
-              <div class="h-100pcr image-block"><img class="ibg" src="/images/5dbbc32bb7b1e5a223b48ab20f64d9a1.webp" /></div>
+            <div class="history__rows">
+              <div class="history__img_block image-block">
+                <img
+                  class="history__img"
+                  src="/images/5dbbc32bb7b1e5a223b48ab20f64d9a1.webp"
+                />
+              </div>
               <div class="post__text_block">
-                <p>Liga 1, formerly known as Divizia A, is the top professional football division in Romania. Its history dates back to 1909, making it one of the oldest leagues in Eastern Europe. The first official championship was played in 1909–1910, and it originally featured a small number of teams from Bucharest and surrounding regions. Over the decades, the league expanded and became more structured, eventually evolving into a national competition.</p>
-                <p>In the early years, clubs from Bucharest such as Venus and Chinezul Timișoara were among the dominant forces. Chinezul notably won six consecutive titles in the 1920s, setting a national record that still stands. After World War II, the league underwent significant changes under the communist regime. Teams were often associated with government institutions or industries, and club names reflected political influences.</p>
-                <p class="mb-reset">Steaua București, originally founded as the army’s team, and Dinamo București, associated with the police, became the most prominent and successful clubs, especially during the communist era. Their rivalry defined Romanian football for decades, with both teams regularly competing for the title. Steaua&#039;s greatest achievement came in 1986 when they won the European Cup, becoming the first Eastern European club to do so.</p>
+                <p>
+                  Liga 1, formerly known as Divizia A, is the top professional
+                  football division in Romania. Its history dates back to 1909,
+                  making it one of the oldest leagues in Eastern Europe. The
+                  first official championship was played in 1909–1910, and it
+                  originally featured a small number of teams from Bucharest and
+                  surrounding regions. Over the decades, the league expanded and
+                  became more structured, eventually evolving into a national
+                  competition.
+                </p>
+                <p>
+                  In the early years, clubs from Bucharest such as Venus and
+                  Chinezul Timișoara were among the dominant forces. Chinezul
+                  notably won six consecutive titles in the 1920s, setting a
+                  national record that still stands. After World War II, the
+                  league underwent significant changes under the communist
+                  regime. Teams were often associated with government
+                  institutions or industries, and club names reflected political
+                  influences.
+                </p>
+                <p>
+                  Steaua București, originally founded as the army’s team, and
+                  Dinamo București, associated with the police, became the most
+                  prominent and successful clubs, especially during the
+                  communist era. Their rivalry defined Romanian football for
+                  decades, with both teams regularly competing for the title.
+                  Steaua's greatest achievement came in 1986 when they won the
+                  European Cup, becoming the first Eastern European club to do
+                  so.
+                </p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="teams__section mb-50">
+        </section>
+        <section class="teams__section section">
           <div class="container">
             <div class="title-block">
-              <h2 class="mb-reset title">best clubs in history</h2>
+              <h2 class="title">best clubs</h2>
             </div>
-            <div class="team__rows grid-col-3">
-              <div class="team__block"><a href="#" class="link-reset team__logo_block"><img class="team-logo-80 hover-scale" src="/images/e7d35c20b74522b43bf72a32126b0d0d.webp" /></a>
-                <div class="team__info">
-                  <div class="team__name_block"><a href="#" class="hover-text link-reset title-link-26">paris saint-germain</a></div>
-                  <div class="team__stats_block flx-btwn">
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">60</span><span>games</span></div>
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">50</span><span>wins</span></div>
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">4</span><span>drows</span></div>
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">6</span><span>loses</span></div>
-                  </div>
-                  <div class="team-info__items flx-btwn">
-                    <div class="team-info__item flx-gap-10"><span>foundet:</span><span class="text-bold text-blue">1905</span></div>
-                    <div class="team-info__item flx-gap-10"><span>city:</span><span class="text-bold text-blue">paris</span></div>
-                    <div class="team-info__item flx-gap-10"><span>trophies:</span><span class="text-bold text-blue">87</span></div>
-                  </div>
-                  <div class="match__link_block"><a href="#" class="link-reset link__btn">more details</a></div>
+            <div class="swiper clubs__swiper">
+              <div class="swiper-wrapper swiper__body">
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="team__block">
+                    <a href="#" class="team__logo_block">
+                      <img
+                        class="teams__team_logo hover-scale"
+                        src="/images/e7d35c20b74522b43bf72a32126b0d0d.webp"
+                      />
+                    </a>
+                    <div class="team__info">
+                      <div class="team__name_block">
+                        <a href="#" class="hover-text teams__team_name"
+                          >paris saint-germain</a
+                        >
+                      </div>
+                      <div class="team__stats_block flx-btwn">
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">60</span
+                          ><span>games</span>
+                        </div>
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">50</span
+                          ><span>wins</span>
+                        </div>
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">4</span
+                          ><span>drows</span>
+                        </div>
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">6</span
+                          ><span>loses</span>
+                        </div>
+                      </div>
+                      <div class="team-info__items flx-btwn">
+                        <div class="team-info__item flx-gap-10">
+                          <span>foundet:</span
+                          ><span class="text-bold text-blue">1905</span>
+                        </div>
+                        <div class="team-info__item flx-gap-10">
+                          <span>city:</span
+                          ><span class="text-bold text-blue">paris</span>
+                        </div>
+                        <div class="team-info__item flx-gap-10">
+                          <span>trophies:</span
+                          ><span class="text-bold text-blue">87</span>
+                        </div>
+                      </div>
+                      <div class="match__link_block">
+                        <a href="#" class="link__btn">more details</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="team__block">
+                    <a href="#" class="team__logo_block">
+                      <img
+                        class="teams__team_logo hover-scale"
+                        src="/images/7458864cd36a14880a760822c3e0798e.webp"
+                      />
+                    </a>
+                    <div class="team__info">
+                      <div class="team__name_block">
+                        <a href="#" class="hover-text teams__team_name"
+                          >olimpique lyonnas</a
+                        >
+                      </div>
+                      <div class="team__stats_block flx-btwn">
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">55</span
+                          ><span>games</span>
+                        </div>
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">44</span
+                          ><span>wins</span>
+                        </div>
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">7</span
+                          ><span>drows</span>
+                        </div>
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">4</span
+                          ><span>loses</span>
+                        </div>
+                      </div>
+                      <div class="team-info__items flx-btwn">
+                        <div class="team-info__item flx-gap-10">
+                          <span>foundet:</span
+                          ><span class="text-bold text-blue">1914</span>
+                        </div>
+                        <div class="team-info__item flx-gap-10">
+                          <span>city:</span
+                          ><span class="text-bold text-blue">marseille</span>
+                        </div>
+                        <div class="team-info__item flx-gap-10">
+                          <span>trophies:</span
+                          ><span class="text-bold text-blue">86</span>
+                        </div>
+                      </div>
+                      <div class="match__link_block">
+                        <a href="#" class="link__btn">more details</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="team__block">
+                    <a href="#" class="team__logo_block">
+                      <img
+                        class="teams__team_logo hover-scale"
+                        src="/images/f32bea7b64b20322c12350e3736f7455.png"
+                      />
+                    </a>
+                    <div class="team__info">
+                      <div class="team__name_block">
+                        <a href="#" class="hover-text teams__team_name"
+                          >olimpique de marseille</a
+                        >
+                      </div>
+                      <div class="team__stats_block flx-btwn">
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">61</span
+                          ><span>games</span>
+                        </div>
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">57</span
+                          ><span>wins</span>
+                        </div>
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">3</span
+                          ><span>drows</span>
+                        </div>
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">1</span
+                          ><span>loses</span>
+                        </div>
+                      </div>
+                      <div class="team-info__items flx-btwn">
+                        <div class="team-info__item flx-gap-10">
+                          <span>foundet:</span
+                          ><span class="text-bold text-blue">1920</span>
+                        </div>
+                        <div class="team-info__item flx-gap-10">
+                          <span>city:</span
+                          ><span class="text-bold text-blue">marseille</span>
+                        </div>
+                        <div class="team-info__item flx-gap-10">
+                          <span>trophies:</span
+                          ><span class="text-bold text-blue">80</span>
+                        </div>
+                      </div>
+                      <div class="match__link_block">
+                        <a href="#" class="link__btn">more details</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="team__block">
+                    <a href="#" class="team__logo_block">
+                      <img
+                        class="teams__team_logo hover-scale"
+                        src="/images/a259089e4222061a1602d66e480997d1.png"
+                      />
+                    </a>
+                    <div class="team__info">
+                      <div class="team__name_block">
+                        <a href="#" class="hover-text teams__team_name"
+                          >rennais</a
+                        >
+                      </div>
+                      <div class="team__stats_block flx-btwn">
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">60</span
+                          ><span>games</span>
+                        </div>
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">35</span
+                          ><span>wins</span>
+                        </div>
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">5</span
+                          ><span>drows</span>
+                        </div>
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">10</span
+                          ><span>loses</span>
+                        </div>
+                      </div>
+                      <div class="team-info__items flx-btwn">
+                        <div class="team-info__item flx-gap-10">
+                          <span>foundet:</span
+                          ><span class="text-bold text-blue">1907</span>
+                        </div>
+                        <div class="team-info__item flx-gap-10">
+                          <span>city:</span
+                          ><span class="text-bold text-blue">renn</span>
+                        </div>
+                        <div class="team-info__item flx-gap-10">
+                          <span>trophies:</span
+                          ><span class="text-bold text-blue">68</span>
+                        </div>
+                      </div>
+                      <div class="match__link_block">
+                        <a href="#" class="link__btn">more details</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="team__block">
+                    <a href="#" class="team__logo_block">
+                      <img
+                        class="teams__team_logo hover-scale"
+                        src="/images/66f35ab2800a6086bea703949dcb525d.png"
+                      />
+                    </a>
+                    <div class="team__info">
+                      <div class="team__name_block">
+                        <a href="#" class="hover-text teams__team_name"
+                          >tuluza</a
+                        >
+                      </div>
+                      <div class="team__stats_block flx-btwn">
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">57</span
+                          ><span>games</span>
+                        </div>
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">50</span
+                          ><span>wins</span>
+                        </div>
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">4</span
+                          ><span>drows</span>
+                        </div>
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">6</span
+                          ><span>loses</span>
+                        </div>
+                      </div>
+                      <div class="team-info__items flx-btwn">
+                        <div class="team-info__item flx-gap-10">
+                          <span>foundet:</span
+                          ><span class="text-bold text-blue">1918</span>
+                        </div>
+                        <div class="team-info__item flx-gap-10">
+                          <span>city:</span
+                          ><span class="text-bold text-blue">paris</span>
+                        </div>
+                        <div class="team-info__item flx-gap-10">
+                          <span>trophies:</span
+                          ><span class="text-bold text-blue">79</span>
+                        </div>
+                      </div>
+                      <div class="match__link_block">
+                        <a href="#" class="link__btn">more details</a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="team__block">
+                    <a href="#" class="team__logo_block">
+                      <img
+                        class="teams__team_logo hover-scale"
+                        src="/images/1698d506bfe90db6252d0fec4f5b45d7.png"
+                      />
+                    </a>
+                    <div class="team__info">
+                      <div class="team__name_block">
+                        <a href="#" class="hover-text teams__team_name"
+                          >monaco</a
+                        >
+                      </div>
+                      <div class="team__stats_block flx-btwn">
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">65</span
+                          ><span>games</span>
+                        </div>
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">54</span
+                          ><span>wins</span>
+                        </div>
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">6</span
+                          ><span>drows</span>
+                        </div>
+                        <div class="team__stats_item flx-clmn">
+                          <span class="text-blue title--26">5</span
+                          ><span>loses</span>
+                        </div>
+                      </div>
+                      <div class="team-info__items flx-btwn">
+                        <div class="team-info__item flx-gap-10">
+                          <span>foundet:</span
+                          ><span class="text-bold text-blue">1932</span>
+                        </div>
+                        <div class="team-info__item flx-gap-10">
+                          <span>city:</span
+                          ><span class="text-bold text-blue">monaco</span>
+                        </div>
+                        <div class="team-info__item flx-gap-10">
+                          <span>trophies:</span
+                          ><span class="text-bold text-blue">82</span>
+                        </div>
+                      </div>
+                      <div class="match__link_block">
+                        <a href="#" class="link__btn">more details</a>
+                      </div>
+                    </div>
+                  </article>
                 </div>
               </div>
-              <div class="team__block"><a href="#" class="link-reset team__logo_block"><img class="team-logo-80 hover-scale" src="/images/7458864cd36a14880a760822c3e0798e.webp" /></a>
-                <div class="team__info">
-                  <div class="team__name_block"><a href="#" class="hover-text link-reset title-link-26">olimpique lyonnas</a></div>
-                  <div class="team__stats_block flx-btwn">
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">55</span><span>games</span></div>
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">44</span><span>wins</span></div>
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">7</span><span>drows</span></div>
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">4</span><span>loses</span></div>
-                  </div>
-                  <div class="team-info__items flx-btwn">
-                    <div class="team-info__item flx-gap-10"><span>foundet:</span><span class="text-bold text-blue">1914</span></div>
-                    <div class="team-info__item flx-gap-10"><span>city:</span><span class="text-bold text-blue">marseille</span></div>
-                    <div class="team-info__item flx-gap-10"><span>trophies:</span><span class="text-bold text-blue">86</span></div>
-                  </div>
-                  <div class="match__link_block"><a href="#" class="link-reset link__btn">more details</a></div>
-                </div>
-              </div>
-              <div class="team__block"><a href="#" class="link-reset team__logo_block"><img class="team-logo-80 hover-scale" src="/images/f32bea7b64b20322c12350e3736f7455.png" /></a>
-                <div class="team__info">
-                  <div class="team__name_block"><a href="#" class="hover-text link-reset title-link-26">olimpique de marseille</a></div>
-                  <div class="team__stats_block flx-btwn">
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">61</span><span>games</span></div>
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">57</span><span>wins</span></div>
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">3</span><span>drows</span></div>
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">1</span><span>loses</span></div>
-                  </div>
-                  <div class="team-info__items flx-btwn">
-                    <div class="team-info__item flx-gap-10"><span>foundet:</span><span class="text-bold text-blue">1920</span></div>
-                    <div class="team-info__item flx-gap-10"><span>city:</span><span class="text-bold text-blue">marseille</span></div>
-                    <div class="team-info__item flx-gap-10"><span>trophies:</span><span class="text-bold text-blue">80</span></div>
-                  </div>
-                  <div class="match__link_block"><a href="#" class="link-reset link__btn">more details</a></div>
-                </div>
-              </div>
-              <div class="team__block"><a href="#" class="link-reset team__logo_block"><img class="team-logo-80 hover-scale" src="/images/a259089e4222061a1602d66e480997d1.png" /></a>
-                <div class="team__info">
-                  <div class="team__name_block"><a href="#" class="hover-text link-reset title-link-26">rennais</a></div>
-                  <div class="team__stats_block flx-btwn">
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">60</span><span>games</span></div>
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">35</span><span>wins</span></div>
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">5</span><span>drows</span></div>
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">10</span><span>loses</span></div>
-                  </div>
-                  <div class="team-info__items flx-btwn">
-                    <div class="team-info__item flx-gap-10"><span>foundet:</span><span class="text-bold text-blue">1907</span></div>
-                    <div class="team-info__item flx-gap-10"><span>city:</span><span class="text-bold text-blue">renn</span></div>
-                    <div class="team-info__item flx-gap-10"><span>trophies:</span><span class="text-bold text-blue">68</span></div>
-                  </div>
-                  <div class="match__link_block"><a href="#" class="link-reset link__btn">more details</a></div>
-                </div>
-              </div>
-              <div class="team__block"><a href="#" class="link-reset team__logo_block"><img class="team-logo-80 hover-scale" src="/images/66f35ab2800a6086bea703949dcb525d.png" /></a>
-                <div class="team__info">
-                  <div class="team__name_block"><a href="#" class="hover-text link-reset title-link-26">tuluza</a></div>
-                  <div class="team__stats_block flx-btwn">
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">57</span><span>games</span></div>
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">50</span><span>wins</span></div>
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">4</span><span>drows</span></div>
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">6</span><span>loses</span></div>
-                  </div>
-                  <div class="team-info__items flx-btwn">
-                    <div class="team-info__item flx-gap-10"><span>foundet:</span><span class="text-bold text-blue">1918</span></div>
-                    <div class="team-info__item flx-gap-10"><span>city:</span><span class="text-bold text-blue">paris</span></div>
-                    <div class="team-info__item flx-gap-10"><span>trophies:</span><span class="text-bold text-blue">79</span></div>
-                  </div>
-                  <div class="match__link_block"><a href="#" class="link-reset link__btn">more details</a></div>
-                </div>
-              </div>
-              <div class="team__block"><a href="#" class="link-reset team__logo_block"><img class="team-logo-80 hover-scale" src="/images/1698d506bfe90db6252d0fec4f5b45d7.png" /></a>
-                <div class="team__info">
-                  <div class="team__name_block"><a href="#" class="hover-text link-reset title-link-26">monaco</a></div>
-                  <div class="team__stats_block flx-btwn">
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">65</span><span>games</span></div>
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">54</span><span>wins</span></div>
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">6</span><span>drows</span></div>
-                    <div class="team__stats_item flx-clmn"><span class="text-blue title--26">5</span><span>loses</span></div>
-                  </div>
-                  <div class="team-info__items flx-btwn">
-                    <div class="team-info__item flx-gap-10"><span>foundet:</span><span class="text-bold text-blue">1932</span></div>
-                    <div class="team-info__item flx-gap-10"><span>city:</span><span class="text-bold text-blue">monaco</span></div>
-                    <div class="team-info__item flx-gap-10"><span>trophies:</span><span class="text-bold text-blue">82</span></div>
-                  </div>
-                  <div class="match__link_block"><a href="#" class="link-reset link__btn">more details</a></div>
-                </div>
+              <div class="swiper__pagination"></div>
+              <div class="swiper__buttons">
+                <div class="swiper-button-prev custom__buttom_prev"></div>
+                <div class="swiper-button-next custom__buttom_next"></div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="players__section mb-50">
+        </section>
+        <section class="players__section section">
           <div class="container">
             <div class="title-block">
-              <h2 class="title mb-reset">best players in history</h2>
+              <h2 class="title">best players</h2>
             </div>
-            <div class="players__rows grid-cols-4">
-              <div class="player__card"><a href="#" class="link-reset player__photo_block image-block"><img class="ibg player__photo hover-scale" src="/images/9c11eeedad8feda7775a175d56f35675.png" />
-                  <p class="mb-reset player__number">01</p><img class="flag" src="/images/7960afe3bf2b78a256e9752dd64148a6.png" />
-                </a>
-                <div class="player__footer"><a class="hover-text link-reset title-link-26" href="#">geronimo rulli</a>
-                  <div class="card__description_block">
-                    <p class="mb-reset text-bold text-blue">goalkeeper</p>
-                  </div>
+            <div class="swiper custom__swiper">
+              <div class="swiper-wrapper swiper__body">
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="player__card">
+                    <a href="#" class="player__photo_block image-block"
+                      ><img
+                        class="ibg player__photo hover-scale"
+                        src="/images/9c11eeedad8feda7775a175d56f35675.png"
+                      />
+                      <p class="player__number">01</p>
+                      <img
+                        class="flag"
+                        src="/images/7960afe3bf2b78a256e9752dd64148a6.png"
+                      />
+                    </a>
+                    <div class="player__footer">
+                      <a class="hover-text player__name" href="#"
+                        >geronimo rulli</a
+                      >
+                      <div class="card__description_block">
+                        <p class="text-bold text-blue">goalkeeper</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="player__card">
+                    <a href="#" class="player__photo_block image-block"
+                      ><img
+                        class="ibg player__photo hover-scale"
+                        src="/images/6cde1c02dbbfa0d399c6e5627c59edf1.png"
+                      />
+                      <p class="player__number">02</p>
+                      <img
+                        class="flag"
+                        src="/images/d15da21860d1dae5c8aebaf4e02b1e47.png"
+                      />
+                    </a>
+                    <div class="player__footer">
+                      <a class="hover-text player__name" href="#"
+                        >geffrey de lange</a
+                      >
+                      <div class="card__description_block">
+                        <p class="text-bold text-blue">defender</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="player__card">
+                    <a href="#" class="player__photo_block image-block"
+                      ><img
+                        class="ibg player__photo hover-scale"
+                        src="/images/9bbaaaaf7f85b50d47c401c8debd204c.png"
+                      />
+                      <p class="player__number">04</p>
+                      <img
+                        class="flag"
+                        src="/images/476874706c620153e7f91e495b2fbae1.png"
+                      />
+                    </a>
+                    <div class="player__footer">
+                      <a class="hover-text player__name" href="#"
+                        >ruben blanco</a
+                      >
+                      <div class="card__description_block">
+                        <p class="text-bold text-blue">defender</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="player__card">
+                    <a href="#" class="player__photo_block image-block"
+                      ><img
+                        class="ibg player__photo hover-scale"
+                        src="/images/ffe3618422153ee4a2e09419c64c7bcb.png"
+                      />
+                      <p class="player__number">05</p>
+                      <img
+                        class="flag"
+                        src="/images/46d5d2193fe3ccea765b36134103d794.png"
+                      />
+                    </a>
+                    <div class="player__footer">
+                      <a class="hover-text player__name" href="#"
+                        >jelley van neck</a
+                      >
+                      <div class="card__description_block">
+                        <p class="text-bold text-blue">defender</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="player__card">
+                    <a href="#" class="player__photo_block image-block"
+                      ><img
+                        class="ibg player__photo hover-scale"
+                        src="/images/9c11eeedad8feda7775a175d56f35675.png"
+                      />
+                      <p class="player__number">01</p>
+                      <img
+                        class="flag"
+                        src="/images/7960afe3bf2b78a256e9752dd64148a6.png"
+                      />
+                    </a>
+                    <div class="player__footer">
+                      <a class="hover-text player__name" href="#"
+                        >geronimo rulli</a
+                      >
+                      <div class="card__description_block">
+                        <p class="text-bold text-blue">goalkeeper</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="player__card">
+                    <a href="#" class="player__photo_block image-block"
+                      ><img
+                        class="ibg player__photo hover-scale"
+                        src="/images/6cde1c02dbbfa0d399c6e5627c59edf1.png"
+                      />
+                      <p class="player__number">02</p>
+                      <img
+                        class="flag"
+                        src="/images/d15da21860d1dae5c8aebaf4e02b1e47.png"
+                      />
+                    </a>
+                    <div class="player__footer">
+                      <a class="hover-text player__name" href="#"
+                        >geffrey de lange</a
+                      >
+                      <div class="card__description_block">
+                        <p class="text-bold text-blue">defender</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="player__card">
+                    <a href="#" class="player__photo_block image-block"
+                      ><img
+                        class="ibg player__photo hover-scale"
+                        src="/images/9bbaaaaf7f85b50d47c401c8debd204c.png"
+                      />
+                      <p class="player__number">04</p>
+                      <img
+                        class="flag"
+                        src="/images/476874706c620153e7f91e495b2fbae1.png"
+                      />
+                    </a>
+                    <div class="player__footer">
+                      <a class="hover-text player__name" href="#"
+                        >ruben blanco</a
+                      >
+                      <div class="card__description_block">
+                        <p class="text-bold text-blue">defender</p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="player__card">
+                    <a href="#" class="player__photo_block image-block"
+                      ><img
+                        class="ibg player__photo hover-scale"
+                        src="/images/ffe3618422153ee4a2e09419c64c7bcb.png"
+                      />
+                      <p class="player__number">05</p>
+                      <img
+                        class="flag"
+                        src="/images/46d5d2193fe3ccea765b36134103d794.png"
+                      />
+                    </a>
+                    <div class="player__footer">
+                      <a class="hover-text player__name" href="#"
+                        >jelley van neck</a
+                      >
+                      <div class="card__description_block">
+                        <p class="text-bold text-blue">defender</p>
+                      </div>
+                    </div>
+                  </article>
                 </div>
               </div>
-              <div class="player__card"><a href="#" class="link-reset player__photo_block image-block"><img class="ibg player__photo hover-scale" src="/images/6cde1c02dbbfa0d399c6e5627c59edf1.png" />
-                  <p class="mb-reset player__number">02</p><img class="flag" src="/images/d15da21860d1dae5c8aebaf4e02b1e47.png" />
-                </a>
-                <div class="player__footer"><a class="hover-text link-reset title-link-26" href="#">geffrey de lange</a>
-                  <div class="card__description_block">
-                    <p class="mb-reset text-bold text-blue">defender</p>
-                  </div>
-                </div>
-              </div>
-              <div class="player__card"><a href="#" class="link-reset player__photo_block image-block"><img class="ibg player__photo hover-scale" src="/images/9bbaaaaf7f85b50d47c401c8debd204c.png" />
-                  <p class="mb-reset player__number">04</p><img class="flag" src="/images/476874706c620153e7f91e495b2fbae1.png" />
-                </a>
-                <div class="player__footer"><a class="hover-text link-reset title-link-26" href="#">ruben blanco</a>
-                  <div class="card__description_block">
-                    <p class="mb-reset text-bold text-blue">defender</p>
-                  </div>
-                </div>
-              </div>
-              <div class="player__card"><a href="#" class="link-reset player__photo_block image-block"><img class="ibg player__photo hover-scale" src="/images/ffe3618422153ee4a2e09419c64c7bcb.png" />
-                  <p class="mb-reset player__number">05</p><img class="flag" src="/images/46d5d2193fe3ccea765b36134103d794.png" />
-                </a>
-                <div class="player__footer"><a class="hover-text link-reset title-link-26" href="#">jelley van neck</a>
-                  <div class="card__description_block">
-                    <p class="mb-reset text-bold text-blue">defender</p>
-                  </div>
-                </div>
+              <div class="swiper__pagination"></div>
+              <div class="swiper__buttons">
+                <div class="swiper-button-prev custom__buttom_prev"></div>
+                <div class="swiper-button-next custom__buttom_next"></div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="news__section mb-50">
+        </section>
+        <section class="news__section section">
           <div class="container">
             <div class="title-block">
-              <h2 class="mb-reset title">liga news</h2>
+              <h2 class="title">liga news</h2>
             </div>
-            <div class="media__cards grid-cols-4"><a href="#" class="link-reset media__item hover-text">
-                <div class="image-block pb-70pcr"><img class="media__img ibg" src="/images/9e2b67cad22586c3dadc45cbef6e75d9.jpg" /></div>
-                <div class="card__footer">
-                  <div class="date__block">
-                    <p class="mb-reset">10.04.2025</p>
-                  </div>
-                  <div class="card__title_block">
-                    <h3 class="mb-reset title--20"> Mbappé Returns to Training Ahead</h3>
-                  </div>
-                  <div class="card__description_block">
-                    <p class="mb-reset">France captain Kylian Mbappé rejoined full training after a brief injury scare</p>
-                  </div>
+            <div class="swiper custom__swiper">
+              <div class="swiper-wrapper swiper__body">
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__card">
+                    <a href="#" class="news__item hover-text">
+                      <div class="image-block news__img_block">
+                        <img
+                          class="news__img ibg"
+                          src="/images/9e2b67cad22586c3dadc45cbef6e75d9.jpg"
+                        />
+                      </div>
+                      <div class="news__footer">
+                        <div class="date__block">
+                          <p>10.04.2025</p>
+                        </div>
+                        <div class="news__title_block">
+                          <h3 class="news__title">
+                            Mbappé Returns to Training Ahead
+                          </h3>
+                        </div>
+                        <div class="news__description">
+                          <p>
+                            France captain Kylian Mbappé rejoined full training
+                            after a brief injury scare Lorem ipsum dolor sit
+                            amet consectetur adipisicing elit. Ullam, alias.
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
                 </div>
-              </a><a href="#" class="link-reset media__item hover-text">
-                <div class="image-block pb-70pcr"><img class="media__img ibg" src="/images/fa25ef8923fad6c3f62bfd9a1e87ef19.webp" /></div>
-                <div class="card__footer">
-                  <div class="date__block">
-                    <p class="mb-reset">11.04.2025</p>
-                  </div>
-                  <div class="card__title_block">
-                    <h3 class="mb-reset title--20"> French Defense Stands Tall Once Again</h3>
-                  </div>
-                  <div class="card__description_block">
-                    <p class="mb-reset">Les Bleus extended their clean sheet streak, with center-backs Saliba emphasizing discipline</p>
-                  </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__card">
+                    <a href="#" class="news__item hover-text">
+                      <div class="image-block news__img_block">
+                        <img
+                          class="news__img ibg"
+                          src="/images/9aa903941a21d8bf5f6496c62e287aec.webp"
+                        />
+                      </div>
+                      <div class="news__footer">
+                        <div class="date__block">
+                          <p>12.08.2025</p>
+                        </div>
+                        <div class="news__title_block">
+                          <h3 class="news__title">
+                            French Defense Stands Tall Once Again
+                          </h3>
+                        </div>
+                        <div class="news__description">
+                          <p>
+                            Les Bleus extended their clean sheet streak, with
+                            center-backs Saliba emphasizing discipline
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
                 </div>
-              </a><a href="#" class="link-reset media__item hover-text">
-                <div class="image-block pb-70pcr"><img class="media__img ibg" src="/images/7d509b8ba6737d1f682adad31e44cee1.jpg" /></div>
-                <div class="card__footer">
-                  <div class="date__block">
-                    <p class="mb-reset">12.04.2025</p>
-                  </div>
-                  <div class="card__title_block">
-                    <h3 class="mb-reset title--20"> Deschamps Defends Tactics After Narrow Win</h3>
-                  </div>
-                  <div class="card__description_block">
-                    <p class="mb-reset">Didier Deschamps responded to critics after France’s narrow 1-0 victory</p>
-                  </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__card">
+                    <a href="#" class="news__item hover-text">
+                      <div class="image-block news__img_block">
+                        <img
+                          class="news__img ibg"
+                          src="/images/fa25ef8923fad6c3f62bfd9a1e87ef19.webp"
+                        />
+                      </div>
+                      <div class="news__footer">
+                        <div class="date__block">
+                          <p>15.08.2025</p>
+                        </div>
+                        <div class="news__title_block">
+                          <h3 class="news__title">
+                            Deschamps Defends Tactics After Narrow Win
+                          </h3>
+                        </div>
+                        <div class="news__description">
+                          <p>
+                            Didier Deschamps responded to critics after France’s
+                            narrow 1-0 victory
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
                 </div>
-              </a><a href="#" class="link-reset media__item hover-text">
-                <div class="image-block pb-70pcr"><img class="media__img ibg" src="/images/9aa903941a21d8bf5f6496c62e287aec.webp" /></div>
-                <div class="card__footer">
-                  <div class="date__block">
-                    <p class="mb-reset">14.04.2025</p>
-                  </div>
-                  <div class="card__title_block">
-                    <h3 class="mb-reset title--20"> Griezmann Eyes Century as Key Figure for France</h3>
-                  </div>
-                  <div class="card__description_block">
-                    <p class="mb-reset">Antoine Griezmann is set to earn his 100th cap continuing his role as a creative force </p>
-                  </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__card">
+                    <a href="#" class="news__item hover-text">
+                      <div class="image-block news__img_block">
+                        <img
+                          class="news__img ibg"
+                          src="/images/7d509b8ba6737d1f682adad31e44cee1.jpg"
+                        />
+                      </div>
+                      <div class="news__footer">
+                        <div class="date__block">
+                          <p>19.08.2025</p>
+                        </div>
+                        <div class="news__title_block">
+                          <h3 class="news__title">
+                            Griezmann Eyes Century as Key Figure for France
+                          </h3>
+                        </div>
+                        <div class="news__description">
+                          <p>
+                            Antoine Griezmann is set to earn his 100th cap
+                            continuing his role as a creative force
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
                 </div>
-              </a></div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__card">
+                    <a href="#" class="news__item hover-text">
+                      <div class="image-block news__img_block">
+                        <img
+                          class="news__img ibg"
+                          src="/images/9e2b67cad22586c3dadc45cbef6e75d9.jpg"
+                        />
+                      </div>
+                      <div class="news__footer">
+                        <div class="date__block">
+                          <p>10.04.2025</p>
+                        </div>
+                        <div class="news__title_block">
+                          <h3 class="news__title">
+                            Mbappé Returns to Training Ahead
+                          </h3>
+                        </div>
+                        <div class="news__description">
+                          <p>
+                            France captain Kylian Mbappé rejoined full training
+                            after a brief injury scare Lorem ipsum dolor sit
+                            amet consectetur adipisicing elit. Ullam, alias.
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__card">
+                    <a href="#" class="news__item hover-text">
+                      <div class="image-block news__img_block">
+                        <img
+                          class="news__img ibg"
+                          src="/images/9aa903941a21d8bf5f6496c62e287aec.webp"
+                        />
+                      </div>
+                      <div class="news__footer">
+                        <div class="date__block">
+                          <p>12.08.2025</p>
+                        </div>
+                        <div class="news__title_block">
+                          <h3 class="news__title">
+                            French Defense Stands Tall Once Again
+                          </h3>
+                        </div>
+                        <div class="news__description">
+                          <p>
+                            Les Bleus extended their clean sheet streak, with
+                            center-backs Saliba emphasizing discipline
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__card">
+                    <a href="#" class="news__item hover-text">
+                      <div class="image-block news__img_block">
+                        <img
+                          class="news__img ibg"
+                          src="/images/fa25ef8923fad6c3f62bfd9a1e87ef19.webp"
+                        />
+                      </div>
+                      <div class="news__footer">
+                        <div class="date__block">
+                          <p>15.08.2025</p>
+                        </div>
+                        <div class="news__title_block">
+                          <h3 class="news__title">
+                            Deschamps Defends Tactics After Narrow Win
+                          </h3>
+                        </div>
+                        <div class="news__description">
+                          <p>
+                            Didier Deschamps responded to critics after France’s
+                            narrow 1-0 victory
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="swiper-slide custom__swiper_slide">
+                  <article class="news__card">
+                    <a href="#" class="news__item hover-text">
+                      <div class="image-block news__img_block">
+                        <img
+                          class="news__img ibg"
+                          src="/images/7d509b8ba6737d1f682adad31e44cee1.jpg"
+                        />
+                      </div>
+                      <div class="news__footer">
+                        <div class="date__block">
+                          <p>19.08.2025</p>
+                        </div>
+                        <div class="news__title_block">
+                          <h3 class="news__title">
+                            Griezmann Eyes Century as Key Figure for France
+                          </h3>
+                        </div>
+                        <div class="news__description">
+                          <p>
+                            Antoine Griezmann is set to earn his 100th cap
+                            continuing his role as a creative force
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+              </div>
+              <div class="swiper__pagination"></div>
+              <div class="swiper__buttons">
+                <div class="swiper-button-prev custom__buttom_prev"></div>
+                <div class="swiper-button-next custom__buttom_next"></div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="footer">
+        </section>
+      </main>
+      <footer class="footer">
         <div class="container">
-          <div class="footer__content flx-btwn"><a href="#" class="link-reset footer__logo_block"><img class="footer__logo_img" src="/images/b35d8bd81f2a977d89218f6dd1de695c.png" /></a>
-            <div class="footer__menu flx-btwn">
+          <div class="footer__content">
+            <a href="#" class="link-reset footer__logo_block"
+              ><img
+                class="footer__logo_img"
+                src="/images/b35d8bd81f2a977d89218f6dd1de695c.png"
+            /></a>
+            <div class="footer__menu">
               <div class="footer__menu_item">
                 <div class="footer-item__title_block">
-                  <h4 class="title--26 mb-reset">Legal</h4>
+                  <h4 class="footer__title">Legal</h4>
                 </div>
-                <div class="footer-menu__nav flx-clmn"><a href="#" class="hover-text link-reset footer__link">Legal notice</a><a href="#" class="hover-text link-reset footer__link">Our partnerships
-                  </a><a href="#" class="hover-text link-reset footer__link">Accessiblity
-                  </a><a href="#" class="hover-text link-reset footer__link">Official broadcasters</a><a href="#" class="hover-text link-reset footer__link">Data protection
-                  </a></div>
+                <div class="footer-menu__nav">
+                  <a href="#" class="hover-text footer__link">Legal notice</a
+                  ><a href="#" class="hover-text footer__link"
+                    >Our partnerships </a
+                  ><a href="#" class="hover-text footer__link">Accessiblity </a
+                  ><a href="#" class="hover-text footer__link"
+                    >Official broadcasters</a
+                  ><a href="#" class="hover-text footer__link"
+                    >Data protection
+                  </a>
+                </div>
               </div>
               <div class="footer__menu_item">
                 <div class="footer-item__title_block">
-                  <h4 class="title--26 mb-reset">LFP brands</h4>
+                  <h4 class="footer__title">LFP brands</h4>
                 </div>
-                <div class="footer-menu__nav flx-clmn"><a href="#" class="hover-text link-reset footer__link"> coach ligue 1
-                  </a><a href="#" class="hover-text link-reset footer__link">LFP
-                  </a><a href="#" class="hover-text link-reset footer__link">11 type LFP</a><a href="#" class="hover-text link-reset footer__link">MPG</a><a href="#" class="hover-text link-reset footer__link">LFP brands
-                  </a></div>
+                <div class="footer-menu__nav">
+                  <a href="#" class="hover-text footer__link"> coach ligue 1 </a
+                  ><a href="#" class="hover-text footer__link">LFP </a
+                  ><a href="#" class="hover-text footer__link">11 type LFP</a
+                  ><a href="#" class="hover-text footer__link">MPG</a
+                  ><a href="#" class="hover-text footer__link">LFP brands </a>
+                </div>
               </div>
               <div class="footer__menu_item">
                 <div class="footer-item__title_block">
-                  <h4 class="title--26 mb-reset">useful info</h4>
+                  <h4 class="footer__title">useful info</h4>
                 </div>
-                <div class="footer-menu__nav flx-clmn"><a href="#" class="hover-text link-reset footer__link">clubs</a><a href="#" class="hover-text link-reset footer__link">rating</a><a href="#" class="hover-text link-reset footer__link">players
-                  </a><a href="#" class="hover-text link-reset footer__link">stats</a><a href="#" class="hover-text link-reset footer__link">contacts</a></div>
+                <div class="footer-menu__nav">
+                  <a href="#" class="footer__link hover-text">clubs</a
+                  ><a href="#" class="footer__link hover-text">rating</a
+                  ><a href="#" class="footer__link hover-text">players </a
+                  ><a href="#" class="footer__link hover-text">stats</a
+                  ><a href="#" class="footer__link hover-text">contacts</a>
+                </div>
               </div>
             </div>
           </div>
@@ -305,8 +969,10 @@
             <p class="mb-reset">© 2025 – liga1.pt. All Rights Reserved</p>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/js/menuBurger.js"></script>
+    <script type="module" src="/js/swiper.js"></script>
   </body>
-
 </html>
