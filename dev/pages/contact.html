@@ -1,90 +1,185 @@
 <!DOCTYPE html>
 <html lang="pt">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>contact</title>
-    <meta name="description" content="This is a new page.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="description" content="This is a contact page." />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
   <body>
-    <div class="body">
-      <div class="header">
+    <div class="wrapper">
+      <header class="header">
         <div class="container">
-          <div class="header__content flx-btwn"><a class="link-reset header__logo_link" href="https://liga1.pt/"><img class="header__logo_img" src="/images/b35d8bd81f2a977d89218f6dd1de695c.png" /></a>
-            <div class="header__menu">
-              <ul class="reset header__menu_list">
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/post">post</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/video-post">video post</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/news">news</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/review">review</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/stats">stats</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/schedule">schedule</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/results">results</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/video">video</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/live">live</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/team">team</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/clubs">clubs</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/player">player</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/contact">contact</a></li>
-                <li><a class="link-reset header__menu_link" href="https://liga1.pt/history">history</a></li>
+          <div class="header__content">
+            <a class="header__logo_link" href="/"
+              ><img
+                class="header__logo_img"
+                alt="logo"
+                src="/images/b35d8bd81f2a977d89218f6dd1de695c.png"
+              />
+            </a>
+            <nav class="header__nav">
+              <ul class="header__nav_list">
+                <li>
+                  <a class="header__nav_link" href="/pages/post.html">post</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/video-post.html"
+                    >video post</a
+                  >
+                </li>
+                <li>
+                  <a class="link-reset header__nav_link" href="/pages/news.html"
+                    >news</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/stats.html">stats</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/review.html"
+                    >review</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/schedule.html"
+                    >calendar</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/results.html"
+                    >results</a
+                  >
+                </li>
+
+                <li>
+                  <a class="header__nav_link" href="/pages/history.html"
+                    >history</a
+                  >
+                </li>
+
+                <li>
+                  <a class="header__nav_link" href="/pages/video.html">video</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/live.html">live</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/club.html">club</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/clubs.html">clubs</a>
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/player.html"
+                    >player</a
+                  >
+                </li>
+                <li>
+                  <a class="header__nav_link" href="/pages/contact.html"
+                    >contact</a
+                  >
+                </li>
               </ul>
-            </div>
+            </nav>
+            <button class="header__burger">
+              <span class="header__burger-line"></span>
+            </button>
           </div>
         </div>
-      </div>
-      <div class="main">
-        <div class="contact__section mb-50">
+      </header>
+      <main class="main">
+        <section class="contact__section section">
           <div class="container">
             <div class="title-block">
-              <h2 class="mb-reset title">contact</h2>
+              <h2 class="title">contact</h2>
             </div>
-            <div class="contact__content flx-clmn">
-              <div class="contact__block flx-clmn"><img class="team-logo-80" src="/images/97e64fadbdc36c46dee2c275126edf4a.webp" />
-                <h4 class="title--26 mb-reset">location</h4><a href="#" class="hover-text link-reset title--20">Praia da Marinha, Algarve</a>
+            <div class="contact__content">
+              <div class="contact__block">
+                <img
+                  class="contact__logo"
+                  src="/images/97e64fadbdc36c46dee2c275126edf4a.webp"
+                />
+                <h4 class="contact__title">location</h4>
+                <a href="#" class="hover-text contact__link"
+                  >Praia da Marinha, Algarve</a
+                >
               </div>
-              <div class="contact__block flx-clmn"><img class="team-logo-80" src="/images/971809e8a2a357408e321598c7d876c0.webp" />
-                <h4 class="title--26 mb-reset">phone</h4><a href="#" class="hover-text link-reset title--20">+1 (234) 123 - 456 - 789</a>
+              <div class="contact__block">
+                <img
+                  class="contact__logo"
+                  src="/images/971809e8a2a357408e321598c7d876c0.webp"
+                />
+                <h4 class="contact__title">phone</h4>
+                <a href="#" class="hover-text contact__link"
+                  >+1 (234) 123 - 456 - 789</a
+                >
               </div>
-              <div class="contact__block flx-clmn"><img class="team-logo-80" src="/images/7c8f262656b22732ac7a144d2b7c37b5.webp" />
-                <h4 class="title--26 mb-reset">email</h4><a href="#" class="hover-text link-reset title--20">info@liga1.pt</a>
+              <div class="contact__block">
+                <img
+                  class="contact__logo"
+                  src="/images/7c8f262656b22732ac7a144d2b7c37b5.webp"
+                />
+                <h4 class="contact__title">email</h4>
+                <a href="#" class="hover-text contact__link"
+                  >info@liga1.pt</a
+                >
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="footer">
+        </section>
+      </main>
+      <footer class="footer">
         <div class="container">
-          <div class="footer__content flx-btwn"><a href="#" class="link-reset footer__logo_block"><img class="footer__logo_img" src="/images/b35d8bd81f2a977d89218f6dd1de695c.png" /></a>
-            <div class="footer__menu flx-btwn">
+          <div class="footer__content">
+            <a href="#" class="link-reset footer__logo_block"
+              ><img
+                class="footer__logo_img"
+                src="/images/b35d8bd81f2a977d89218f6dd1de695c.png"
+            /></a>
+            <div class="footer__menu">
               <div class="footer__menu_item">
                 <div class="footer-item__title_block">
-                  <h4 class="title--26 mb-reset">Legal</h4>
+                  <h4 class="footer__title">Legal</h4>
                 </div>
-                <div class="footer-menu__nav flx-clmn"><a href="#" class="hover-text link-reset footer__link">Legal notice</a><a href="#" class="hover-text link-reset footer__link">Our partnerships
-                  </a><a href="#" class="hover-text link-reset footer__link">Accessiblity
-                  </a><a href="#" class="hover-text link-reset footer__link">Official broadcasters</a><a href="#" class="hover-text link-reset footer__link">Data protection
-                  </a></div>
+                <div class="footer-menu__nav">
+                  <a href="#" class="hover-text footer__link">Legal notice</a
+                  ><a href="#" class="hover-text footer__link"
+                    >Our partnerships </a
+                  ><a href="#" class="hover-text footer__link">Accessiblity </a
+                  ><a href="#" class="hover-text footer__link"
+                    >Official broadcasters</a
+                  ><a href="#" class="hover-text footer__link"
+                    >Data protection
+                  </a>
+                </div>
               </div>
               <div class="footer__menu_item">
                 <div class="footer-item__title_block">
-                  <h4 class="title--26 mb-reset">LFP brands</h4>
+                  <h4 class="footer__title">LFP brands</h4>
                 </div>
-                <div class="footer-menu__nav flx-clmn"><a href="#" class="hover-text link-reset footer__link"> coach ligue 1
-                  </a><a href="#" class="hover-text link-reset footer__link">LFP
-                  </a><a href="#" class="hover-text link-reset footer__link">11 type LFP</a><a href="#" class="hover-text link-reset footer__link">MPG</a><a href="#" class="hover-text link-reset footer__link">LFP brands
-                  </a></div>
+                <div class="footer-menu__nav">
+                  <a href="#" class="hover-text footer__link"> coach ligue 1 </a
+                  ><a href="#" class="hover-text footer__link">LFP </a
+                  ><a href="#" class="hover-text footer__link">11 type LFP</a
+                  ><a href="#" class="hover-text footer__link">MPG</a
+                  ><a href="#" class="hover-text footer__link">LFP brands </a>
+                </div>
               </div>
               <div class="footer__menu_item">
                 <div class="footer-item__title_block">
-                  <h4 class="title--26 mb-reset">useful info</h4>
+                  <h4 class="footer__title">useful info</h4>
                 </div>
-                <div class="footer-menu__nav flx-clmn"><a href="#" class="hover-text link-reset footer__link">clubs</a><a href="#" class="hover-text link-reset footer__link">rating</a><a href="#" class="hover-text link-reset footer__link">players
-                  </a><a href="#" class="hover-text link-reset footer__link">stats</a><a href="#" class="hover-text link-reset footer__link">contacts</a></div>
+                <div class="footer-menu__nav">
+                  <a href="#" class="footer__link hover-text">clubs</a
+                  ><a href="#" class="footer__link hover-text">rating</a
+                  ><a href="#" class="footer__link hover-text">players </a
+                  ><a href="#" class="footer__link hover-text">stats</a
+                  ><a href="#" class="footer__link hover-text">contacts</a>
+                </div>
               </div>
             </div>
           </div>
@@ -92,8 +187,8 @@
             <p class="mb-reset">© 2025 – liga1.pt. All Rights Reserved</p>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
+    <script type="module" src="/js/menuBurger.js"></script>
   </body>
-
 </html>

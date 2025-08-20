@@ -14,6 +14,7 @@
 @import 'player.css';
 @import 'club.css';
 @import 'history.css';
+@import 'contact.css';
 @import 'pagination.css';
 @import 'swiper.css';
 
@@ -354,18 +355,7 @@ body {
   row-gap: 15px;
   width: 100%;
 }
-.contact__section {
-  text-align: center;
-}
-.contact__content {
-  row-gap: 30px;
-}
-.contact__block {
-  font-size: 20px;
-  font-weight: 500;
-  text-transform: capitalize;
-  row-gap: 10px;
-}
+
 
 .h-100pcr {
   height: 100%;
